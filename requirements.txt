@@ -1,0 +1,6 @@
+gitpython==3.1.43
+pandas==2.2.1
+matplotlib==3.8.3
+python-dotenv==1.0.1
+jieba==0.42.1
+wordcloud==1.9.3

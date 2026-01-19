@@ -1,0 +1,2051 @@
+﻿commit_hash,author_name,author_email,commit_time,commit_message,insertions,deletions
+ce52825d,Kenneth Reitz,me@kennethreitz.org,2018-11-13 20:48:59,fix coverage,1,6
+9533df1f,Kenneth Reitz,me@kennethreitz.org,2018-11-13 20:51:25,"Merge pull request #4870 from requests/kennethreitz-patch-1
+
+Delete appveyor.yml",0,57
+75e2dd30,Kenneth Reitz,me@kennethreitz.org,2018-11-13 20:51:36,"Merge pull request #4868 from jdufresne/tox-py37
+
+Add Python 3.7 to tox test matrix",1,1
+5e0ebc9b,Kenneth Reitz,me@kennethreitz.org,2018-11-13 20:52:06,"Merge pull request #4867 from jdufresne/extra
+
+Simplify tox.ini",0,1
+3da2f102,Kenneth Reitz,me@kennethreitz.org,2018-11-13 20:52:48,Delete .travis.yml,0,42
+d911f278,Kenneth Reitz,me@kennethreitz.org,2018-11-13 20:52:59,Delete install.ps1,0,229
+bc3eddc6,Kenneth Reitz,me@kennethreitz.org,2018-11-13 20:53:16,Delete settings.json,0,25
+fc9dfac2,Kayla Ngan,kangan@microsoft.com,2018-11-14 23:27:16,"Add build badge for Azure Pipelines
+
+Not sure if you want to add a build badge since you didn't have one before. But if you do, here's yours for Azure Pipelines.",1,0
+57d7284c,Kenneth Reitz,me@kennethreitz.org,2018-11-14 23:33:06,"Merge pull request #4874 from kaylangan/patch-1
+
+Add build badge for Azure Pipelines",1,0
+0dd47525,Nate Prewitt,Nate.Prewitt@gmail.com,2018-12-10 12:19:10,"revert azure pipeline changes
+
+Reverting commits:
+fc9dfac
+bc3eddc
+d911f27
+3da2f10
+ce52825
+398d110
+c15d2b6
+086655e",399,50
+c35f3426,Nate Prewitt,nate.prewitt@gmail.com,2018-12-10 12:31:09,"Merge pull request #4898 from requests/revert_azure
+
+revert azure pipeline changes",399,50
+abe950cf,Nate Prewitt,Nate.Prewitt@gmail.com,2018-12-10 12:45:06,"Revert ""Set up Azure Pipelines for Linux and Windows""
+
+This reverts commit e4974c7ff55e95e6a04755f46bc71dd6c028f831.",0,73
+8761e973,Alex Gaynor,alex.gaynor@gmail.com,2018-12-10 13:41:14,Bumped maximum version of idna,1,1
+5a1e738e,Nate Prewitt,Nate.Prewitt@gmail.com,2018-12-10 14:13:32,v2.21.0,9,2
+c452e3b9,Nate Prewitt,nate.prewitt@gmail.com,2018-12-10 23:36:33,"Merge pull request #4901 from requests/v2.21.0
+
+v2.21.0",9,2
+c4d76800,Matthieu Moy,git@matthieu-moy.fr,2018-12-13 22:57:00,"get(), request(): fix documentation of 'params'
+
+'params' is sent to the query string, not the body.",2,2
+5c1f72e8,Nate Prewitt,nate.prewitt@gmail.com,2018-12-14 05:34:10,"Merge pull request #4910 from moy/master
+
+get(), request(): fix documentation of 'params'",2,2
+ad9400ec,Seth M. Larson,sethmichaellarson@gmail.com,2018-12-24 05:50:16,Normalize percent-encoded bytes before comparison,10,1
+2aab9a9a,Jon Dufresne,jon.dufresne@gmail.com,2018-12-30 01:05:33,"Remove internal use of unnecessary compat shim for OrderedDict
+
+The shim is the same on both Python 2 & 3. It is always
+collections.OrderedDict. Avoid the indirection and import from Python
+stdlib instead.
+
+Keep requests.compat.OrderedDict for backwards compatibility. Some
+packages import this.",13,7
+6dd410ff,Ofek Lev,ofekmeister@gmail.com,2019-01-13 07:33:00,Fix typo,2,2
+f37daf25,Nate Prewitt,nate.prewitt@gmail.com,2019-01-13 07:54:21,"Merge pull request #4936 from ofek/patch-2
+
+Fix typo",2,2
+f1e48f4d,Seth M. Larson,sethmichaellarson@gmail.com,2019-01-17 02:47:10,Merge branch 'master' into patch-1,2,2
+b49547f1,Steven Loria,sloria1@gmail.com,2019-01-17 09:59:14,"Remove sudo: from .travis.yml
+
+TravisCI has migrated their infrastructure: https://blog.travis-ci.com/2018-11-19-required-linux-infrastructure-migration",1,3
+4c320ac3,Seth Michael Larson,sethmichaellarson@gmail.com,2019-01-20 00:34:58,Lock pytest to <4.1,239,252
+5734f4fc,Seth Michael Larson,sethmichaellarson@gmail.com,2019-01-20 00:51:12,Force pipenv to use the lockfile,1,1
+28208392,Seth Michael Larson,sethmichaellarson@gmail.com,2019-01-20 00:57:12,revert lock change,250,237
+67a9ed47,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2019-01-21 21:58:32,"Merge pull request #4915 from sethmlarson/patch-1
+
+Normalize percent-encoded bytes before comparison",13,4
+334be4d2,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2019-01-21 21:59:29,Merge branch 'master' into patch-2,13,4
+64bde658,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2019-01-22 02:50:27,"Merge pull request #4940 from sloria/patch-2
+
+Remove sudo: from .travis.yml",1,3
+827bbe2a,Andrew Bonney,andrew@bonney.co.uk,2019-02-04 21:28:12,"docs: correct error in 'merge_environment_settings' usage
+
+Resolves #4959",1,1
+c9309e4c,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2019-02-04 23:22:40,"Merge pull request #4960 from andrewbonney/master
+
+docs: correct error in 'merge_environment_settings' usage
+
+Closes #4959",1,1
+f507a3ef,Eduardo Rodrigues,eduardo.rodrigues@sentia.com,2019-02-09 18:56:06,add utf8 with bom to test,4,0
+9e27326d,Eduardo Rodrigues,eduardo.rodrigues@sentia.com,2019-02-10 05:00:32,add failing tests for bom,33,1
+19cff44e,Eduardo Rodrigues,eduardo.rodrigues@sentia.com,2019-02-10 05:14:22,fix response with utf8 bom,3,0
+5add08fc,Sayz Lim,talk@sayzlim.net,2019-02-12 21:24:58,"Fix double image request
+
+Use official framework for the ""custom"" ad design integration.",63,228
+fbe48fbb,Jake Treacher,git@jaketreacher.com,2019-02-15 10:40:24,Add trusted domains,8,1
+177f4dd2,aless10,alessio.izzo86@gmail.com,2019-02-18 02:06:01,"[fix] fix failing doctests in requests/*
+[add] add --doctest-modules in pytest.ini file as addopts
+[add] add myself to AUTHORS",17,17
+fd926e74,aless10,alessio.izzo86@gmail.com,2019-02-18 02:45:32,[change] change description in __init__ module. Now it is the same as master,1,1
+24821145,sblondon,sblondon@users.noreply.github.com,2019-02-22 18:04:07,"Add link to user-agent documentation
+
+So the user has a pointer to the documentation about the searched topic.",2,1
+7d7d9eba,Grey Baker,greysteil@gmail.com,2019-02-23 21:24:52,Add project URLs with links to source code and docs,4,0
+f2409648,Kenneth Reitz,me@kennethreitz.org,2019-03-01 00:46:27,programming quiz,1,3
+63e7748f,Kenneth Reitz,me@kennethreitz.org,2019-03-01 00:47:41,programming quiz,3,0
+a345b776,Kenneth Reitz,me@kennethreitz.org,2019-03-01 01:03:44,update copyright year,107,103
+a7969c5c,Hugo,hugovk@users.noreply.github.com,2019-03-10 23:08:09,Remove old Python 2.6 check and duplicate config,1,16
+aa21dbe7,Alessio Izzo,alessio.izzo86@gmail.com,2019-03-26 23:24:43,Merge branch 'master' into master,111,106
+6f6d0164,Tom Christie,tom@tomchristie.com,2019-03-27 18:09:19,"Add `requests-async` link to ""non-blocking"" docs.
+
+Links to https://github.com/encode/requests-async for an asyncio non-blocking option.",2,1
+76a89c3c,Kenneth Reitz,me@kennethreitz.org,2019-03-29 11:51:53,Update sidebarintro.html,1,0
+9742da7f,Kenneth Reitz,me@kennethreitz.org,2019-03-29 11:52:07,Update sidebarlogo.html,1,0
+c19c394a,Alessio Izzo,alessio.izzo86@gmail.com,2019-04-07 19:24:09,Merge branch 'master' into master,2,0
+8b773a4f,Alessio Izzo,alessio.izzo86@gmail.com,2019-04-07 19:36:34,"[remove] remove invalid field in docete
+
+Remove 'Connection': 'close' field in 'headers'",1,1
+37011aaa,Ian Gao,imikay@users.noreply.github.com,2019-04-11 19:03:15,"Add import statement 
+
+Should add this import statement to make it more user friendly, especially for the beginners in Python.",1,0
+69856f30,Kenneth Reitz,me@kennethreitz.org,2019-04-20 20:09:43,requests 3.0 intentions,1,2
+2d120e32,Kenneth Reitz,me@kennethreitz.org,2019-04-20 20:19:49,fix,1,1
+5d063547,Kenneth Reitz,me@kennethreitz.org,2019-04-20 20:21:21,fix,1,1
+7f438416,Kenneth Reitz,me@kennethreitz.org,2019-04-20 20:22:04,less is more,1,1
+749419ad,s-pace,sylvain.pace@algolia.com,2019-04-23 13:47:08,feat: add search to every documentation pages,21,1
+74289f42,s-pace,sylvain.pace@algolia.com,2019-04-23 13:47:33,feat: add search to the main introduction page,21,0
+d22d219d,Kenneth Reitz,me@kennethreitz.org,2019-04-23 20:23:57,"Merge pull request #5066 from s-pace/doc/update
+
+[doc website] Add a nice search experience",42,1
+663aa116,Alessio Izzo,alessio.izzo86@gmail.com,2019-04-24 01:18:02,Merge branch 'master' into master,43,3
+faafb5a0,Alex Chan,alex@alexwlchan.net,2019-04-25 15:19:20,"docs: Correct the spelling of ""maintenance""",1,1
+e3c3c0a8,Kenneth Reitz,me@kennethreitz.org,2019-04-27 21:12:09,"Merge pull request #5062 from alexwlchan/patch-1
+
+docs: Correct the spelling of ""maintenance""",1,1
+e73a6c52,Kenneth Reitz,me@kennethreitz.org,2019-04-27 21:13:43,"Merge pull request #5034 from tomchristie/patch-1
+
+Add `requests-async` link to ""non-blocking"" docs.",2,1
+a310b5ab,Bjørnar Myrheim,45852703+Myrheimb@users.noreply.github.com,2019-05-01 00:37:11,"Possible fix for #4945?
+
+Could the missing colon on line 612 be the reason for the missing reference in the docs as described in issue #4945?",1,1
+b4f76878,Buğra İşgüzar,biisguzar@gmail.com,2019-05-02 05:30:04,Merge branch 'master' into patch-1,45,4
+1f9425ca,Kenneth Reitz,me@kennethreitz.org,2019-05-06 19:41:34,Update README.md,0,2
+e52932c4,Kenneth Reitz,me@kennethreitz.org,2019-05-06 19:48:07,Update index.rst,1,3
+a694ab5c,zurbrugc,40577023+zurbrugc@users.noreply.github.com,2019-05-10 02:33:01,"Linked contribution information in README
+
+For potential contributors who are new to GitHub and prefer to learn via structured processes, linking the Contributor's Guide and development philosophy documents in the README will make it easier for them to find this information. This will increase the quality of their contributions and make them more comfortable contributing to the project.",5,4
+b5b8c038,Kenneth Reitz,me@kennethreitz.org,2019-05-10 05:37:32,"Merge pull request #5082 from zurbrugc/master
+
+Linked contribution information in README",5,4
+b18f7657,Kenneth Reitz,me@kennethreitz.org,2019-05-10 05:38:19,"Merge pull request #5054 from imikay/patch-1
+
+Add import statement to README example",1,0
+d91fe009,Белавин Денис,luckydenis@yandex-team.ru,2019-05-13 22:18:42,#4965 fix-draw: Accessing response.content twice removes forgets read error.,9,0
+bd100472,Белавин Денис,luckydenis@yandex-team.ru,2019-05-14 17:11:56,#4965 fix: Accessing response.content twice removes forgets read error.,57,7
+48037167,zurbrugc,40577023+zurbrugc@users.noreply.github.com,2019-05-15 02:21:30,"Merge pull request #1 from kennethreitz/master
+
+Updating my fork with the original",1,0
+44256ffe,zurbrugc,40577023+zurbrugc@users.noreply.github.com,2019-05-15 02:25:16,"Linked how to make a pull requests in README
+
+This makes it easier for users new to GitHub to learn how to make a pull request.",1,1
+a91905d7,Nate Prewitt,Nate.Prewitt@gmail.com,2019-05-16 03:51:23,adjust pytest pins to fix testing infra,363,266
+68e581f1,Nate Prewitt,Nate.Prewitt@gmail.com,2019-05-16 03:51:31,drop 3.4 support,14,8
+aeda65bb,Nate Prewitt,Nate.Prewitt@gmail.com,2019-05-16 03:51:39,v2.22.0,13,13
+8e26bfd8,Frost Ming,mianghong@gmail.com,2019-05-16 13:12:48,"Merge pull request #5092 from kennethreitz/urllib1.25
+
+v2.22.0",383,280
+86760daf,Frost Ming,mianghong@gmail.com,2019-05-16 13:14:08,Merge branch 'master' into master,383,280
+a79a6339,Frost Ming,mianghong@gmail.com,2019-05-16 13:20:45,"Merge pull request #5088 from zurbrugc/master
+
+Linked a GitHub tutorial regarding pull requests in README",1,1
+d36f3919,Hugo,hugovk@users.noreply.github.com,2019-05-16 23:31:37,Merge branch 'master' into rm-2.6,435,288
+be295ba4,Hugo,hugovk@users.noreply.github.com,2019-05-16 23:36:45,Simplify config,1,2
+4a59cd09,Alessio Izzo,alessio.izzo86@gmail.com,2019-05-19 22:08:55,Merge branch 'master' into master,392,290
+67a0e90b,aless10,alessio.izzo86@gmail.com,2019-05-19 22:20:11,[change] change doctest based on LuckyDenis suggestion,11,2
+2e633471,aless10,alessio.izzo86@gmail.com,2019-05-19 22:20:40,Merge branch 'master' of https://github.com/kennethreitz/requests,434,292
+96ff7ca3,aless10,alessio.izzo86@gmail.com,2019-05-19 22:21:40,Merge branch 'master' of https://github.com/aless10/requests,0,0
+6d2a5072,aless10,alessio.izzo86@gmail.com,2019-05-19 22:25:52,[add] add NORMALIZE_WHITESPACE and ELLIPSIS to pytest.ini and remove them from requests/__init__.py,2,3
+d88240ba,petar-iv,20043863+petar-iv@users.noreply.github.com,2019-05-20 14:57:11,Print the type of the password instead of the password itself,1,1
+9c3c755a,Denis Belavin,41421345+LuckyDenis@users.noreply.github.com,2019-05-20 15:12:35,Merge branch 'master' into master,384,281
+6f81e78d,Buğra İşgüzar,biisguzar@gmail.com,2019-05-20 23:35:41,"Merge pull request #5099 from petar-iv/password-no-print
+
+Print the type of the password instead of the password itself",1,1
+0becdca7,Denis Belavin,41421345+LuckyDenis@users.noreply.github.com,2019-05-21 02:00:14,Merge branch 'master' into master,1,1
+dc75b3ca,Miro Hrončok,miro@hroncok.cz,2019-05-24 06:02:43,"Support pytest 4
+
+Fixes https://github.com/kennethreitz/requests/issues/5048
+
+See https://docs.pytest.org/en/latest/deprecations.html#marks-in-pytest-mark-parametrize",3,2
+d889b98e,aless10,alessio.izzo86@gmail.com,2019-05-25 02:40:22,Merge branch 'master' of https://github.com/kennethreitz/requests,1,1
+47cb8bae,Alan Yee,alanyee@users.noreply.github.com,2019-05-30 02:49:44,"Update sessions.py
+
+-Made removing a key-value pair more modular
+-Remove unneeeded return statement",1,5
+2e4329d1,Mads Jensen,mje@inducks.org,2019-06-03 14:45:48,Removed py34 from tox.ini.,1,1
+4983a9bd,Nate Prewitt,nate.prewitt@gmail.com,2019-06-03 22:01:03,"Merge pull request #5108 from atombrella/python34
+
+Removed py34 from tox.ini.",1,1
+6296df90,Denis Belavin,41421345+LuckyDenis@users.noreply.github.com,2019-06-13 15:18:55,Merge branch 'master' into master,1,1
+27b24f97,aless10,alessio.izzo86@gmail.com,2019-06-14 04:48:08,Merge branch 'master' of https://github.com/kennethreitz/requests,1,1
+45c2e679,Alan Yee,alanyee@users.noreply.github.com,2019-06-25 01:12:38,"Update sessions.py
+
+Use `.format()` over `%` given PEP 3101",3,3
+c8d8b4b5,Jacek Kołodziej,kolodziejj@gmail.com,2019-07-02 03:41:38,"Document that `request.head` defaults `allow_redirects` to `False`
+
+Related: kennethreitz/requests#4274",3,1
+2da7fe08,Leon Verrall,LVerrall@slb.com,2019-07-02 17:17:33,Use urllib for chunked requests,13,58
+0b6c110a,kobayashi,abok.1k@gmail.com,2019-07-12 08:18:42,"Merge pull request #5127 from Unit03/head-allow-redirects-docstring
+
+Document that `request.head` defaults `allow_redirects` to `False`",3,1
+5f576ad2,Min ho Kim,minho42@gmail.com,2019-07-19 23:46:08,Fix typos,2,2
+fb7efcf3,Dull Bananas,dull.bananas0@gmail.com,2019-07-21 00:17:54,Add example of good code below example of bad code,8,1
+50daf9c0,Dull Bananas,dull.bananas0@gmail.com,2019-07-21 00:23:52,Add .eggs dir to .gitignore,1,0
+ebd3e36a,Dull Bananas,dull.bananas0@gmail.com,2019-07-21 00:29:50,Add 'Dull Bananas' to AUTHORS,1,0
+f9ac75ca,Dull Bananas,dull.bananas0@gmail.com,2019-07-21 00:31:39,Fix GitHub profile link,1,1
+c79d61b9,Dull Bananas,dull.bananas0@gmail.com,2019-07-21 06:32:04,List valid methods for request(),1,1
+9a2e5df0,Kenneth Reitz,me@kennethreitz.org,2019-07-21 11:57:00,"Merge pull request #5142 from dullbananas/master
+
+Improve docs",11,2
+e8c9acc8,lmvlmv,lverrall@gmail.com,2019-07-23 16:31:00,Merge branch 'master' into urllibfix,14,3
+589a8225,Kenneth Reitz,me@kennethreitz.org,2019-07-24 00:53:21,"Merge pull request #5141 from minho42/Fix-typos
+
+Fix typos",2,2
+3922dcf2,Denis Belavin,41421345+LuckyDenis@users.noreply.github.com,2019-07-24 02:36:37,Merge branch 'master' into master,16,5
+a0d58026,Alessio Izzo,alessio.izzo86@gmail.com,2019-07-24 18:42:40,Merge branch 'master' into master,17,6
+989f7027,lmvlmv,lverrall@gmail.com,2019-07-25 17:49:24,Merge branch 'master' into urllibfix,2,2
+07005b0f,sblondon,sblondon@users.noreply.github.com,2019-07-26 00:07:21,Merge branch 'master' into master,564,404
+a4c18cd7,Dull Bananas,dull.bananas0@gmail.com,2019-07-30 00:06:11,Add missing backtick (#5145),1,1
+e8ff4897,Denis Belavin,41421345+LuckyDenis@users.noreply.github.com,2019-08-15 02:12:19,Merge branch 'master' into master,1,1
+7d57e8ec,Derek,dschaller@users.noreply.github.com,2019-08-16 09:47:10,fix codecov logo in readme,1,1
+408e576d,Aadi Bajpai,me@aadibajpai.me,2019-08-20 00:43:41,"Update README.md with download count
+
+https://pepy.tech/project/requests",1,1
+bf582192,Nate Prewitt,nate.prewitt@gmail.com,2019-08-20 01:54:31,"Merge pull request #5167 from aadibajpai/patch-1
+
+[IMPROVEMENT] Update monthly download count",1,1
+9f55e4bc,Nate Prewitt,nate.prewitt@gmail.com,2019-08-20 01:55:40,"Merge pull request #5164 from dschaller/patch-1
+
+fix codecov logo in readme",1,1
+9cdf2941,Nihaal,nihaal.s@live.co.uk,2019-08-20 04:33:18,Updated references to previous requests/requests GitHub path,44,44
+d79024f2,Nate Prewitt,nate.prewitt@gmail.com,2019-08-20 06:57:15,"Merge pull request #5160 from OrangutanGaming/change-github
+
+Updated references to previous requests/requests GitHub path",44,44
+9bc49b59,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:11:02,Merge branch 'master' into patch-1,62,51
+dd15e528,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:11:22,"Merge pull request #5119 from alanyee/patch-1
+
+Update sessions.py",3,3
+0fe6653e,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:12:58,"Merge pull request #5049 from hroncok/pytest4
+
+Support pytest 4",3,2
+11ed88bc,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:14:36,"Merge pull request #5105 from alanyee/patch-1
+
+Update sessions.py",1,5
+42c5a4f6,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:15:44,"Merge pull request #5128 from lmvlmv/urllibfix
+
+Use urllib for chunked requests",13,58
+67a7b2e8,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:16:35,"Merge pull request #5087 from LuckyDenis/master
+
+#4965 Fix",63,4
+1b450d20,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:17:54,"Merge pull request #5018 from hugovk/rm-2.6
+
+Remove duplicate config",1,14
+48e1a335,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:21:04,Merge branch 'master' into master,691,533
+5eb73374,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:21:12,"Merge pull request #4978 from sayzlim/master
+
+Fix double image request",63,228
+8086ffdb,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:21:31,"Merge pull request #4999 from greysteil/add-project-urls
+
+Add project URLs with links to source code and docs",4,0
+bbc3d435,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:22:32,"Merge pull request #4922 from jdufresne/ordered
+
+Remove unnecessary compat shim for OrderedDict",13,7
+82c744b5,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:23:52,"Merge pull request #4983 from jaketreacher/2949-trusted-domain
+
+Add trusted domains",8,1
+ada50499,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:24:08,"Merge pull request #4996 from sblondon/master
+
+Add link to user-agent documentation",2,1
+df918c06,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:25:37,Merge branch 'master' into master,221,369
+3e7d0a87,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:25:50,"Merge pull request #4987 from aless10/master
+
+[fix] fix failing doctests in requests/*",18,9
+4bce5a0b,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:26:51,Merge branch 'master' into feature/strip-utf8-bom,799,779
+a71e2240,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:26:59,"Merge pull request #4976 from eduardomourar/feature/strip-utf8-bom
+
+Fix for response with UTF-8 BOM",39,0
+428f7a27,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:38:21,"Merge pull request #5076 from myrheimb/patch-1
+
+Possible fix for #4945?",1,1
+7ca0e86a,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:45:53,Update README.md,4,4
+d41fba63,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:46:47,Update README.md,1,1
+33932323,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:46:57,Update README.md,3,1
+00fa902c,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:47:05,Update README.md,0,2
+1f9ec06e,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:49:18,Update index.rst,3,38
+04b5c837,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:50:07,Update index.rst,1,1
+7f2513fb,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:50:22,Update index.rst,1,1
+10e5f874,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:54:00,Update sidebarintro.html,1,2
+b248328e,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:54:28,Update sidebarintro.html,0,20
+7f3ce7ea,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:55:22,Update sidebarlogo.html,1,24
+72ca1b7e,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:55:57,Update index.rst,1,1
+e2fce5e6,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:56:45,Update index.rst,2,2
+d258b20e,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:57:00,Delete sponsors.rst,0,96
+bedb1cd3,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:57:46,Update README.md,1,2
+ced37791,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:57:58,Update README.md,2,1
+b98be047,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:58:07,Update README.md,0,1
+b1d584e8,Kenneth Reitz,me@kennethreitz.org,2019-08-20 12:58:49,Update index.rst,4,7
+bc81ee3a,Kenneth Reitz,me@kennethreitz.org,2019-08-20 13:01:06,Update setup.py,1,0
+3c01cd70,Kenneth Reitz,me@kennethreitz.org,2019-08-20 13:02:03,Update README.md,0,2
+4070bcf1,Marijn Stapert,marijn.stapert@topicus.nl,2019-08-21 01:25:03,Fix typo,1,1
+e320f9e4,Nate Prewitt,nate.prewitt@gmail.com,2019-08-21 01:28:48,"Merge pull request #5171 from MFStapert/patch-2
+
+Fix typo",1,1
+913adced,Kenneth Reitz,me@kennethreitz.org,2019-08-21 07:02:23,Update sidebarlogo.html,1,1
+b6b90f4d,Kenneth Reitz,me@kennethreitz.org,2019-08-21 07:02:36,Update sidebarintro.html,1,1
+3d968ff3,Kenneth Reitz,me@kennethreitz.org,2019-08-26 22:35:52,Update index.rst,1,1
+39b3dcf7,lzutao,taolzu@gmail.com,2019-09-17 20:34:36,Fix formatting of status code example,10,7
+d7018e6d,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:34:01,Create FUNDING.yml,1,0
+da13fec6,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:37:03,Create SECURITY.md,96,0
+5090ba79,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:39:15,Create .nojekyll,1,0
+6c322457,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:42:55,pipfile / lock,110,206
+6b639bbc,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:43:41,Update README.md,1,1
+266d17c4,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:43:58,Update README.md,1,1
+c13ccd11,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:48:45,Update README.md,13,2
+3e012c16,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:49:15,Update README.md,1,1
+5f3b9599,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:49:42,Update README.md,2,2
+55d3d8b3,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:50:59,Update README.md,1,1
+1c19e614,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:51:10,Update README.md,1,1
+0b251746,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:51:37,Update README.md,1,1
+54772088,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:52:15,Update README.md,2,1
+537ac3cf,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:52:51,Update README.md,3,3
+25d1ffda,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:53:30,Update README.md,1,1
+e0359b27,Kenneth Reitz,me@kennethreitz.org,2019-09-18 14:54:15,Update README.md,1,0
+7c71cb96,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:02:29,Update README.md,8,3
+2bc6aeb6,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:03:12,Update README.md,1,2
+54cefc90,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:04:51,Update README.md,2,1
+e231de6d,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:05:16,Update README.md,0,4
+3ff2995c,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:09:42,Update README.md,1,1
+3423b517,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:10:00,Update README.md,1,1
+c386eebc,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:10:21,Update README.md,0,4
+c51a9efa,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:10:41,Update README.md,3,2
+687ff0eb,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:11:34,Update README.md,2,1
+4d2875da,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:11:56,Update README.md,1,1
+d675d83b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:12:12,Update README.md,2,1
+36cc7bbf,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:12:31,Update README.md,1,0
+11982c1f,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:14:26,Update README.md,0,18
+bb2ae009,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:14:40,Update README.md,1,1
+59dac473,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:15:04,Update README.md,2,1
+6b89c875,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:16:49,Update README.md,5,0
+9b51d7c4,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:17:05,Update README.md,4,3
+4b9e5d0e,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:17:21,Update README.md,4,3
+c198cc0b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:17:40,Update README.md,2,1
+0859c01b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:19:23,flourish,0,0
+b44d6fdf,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:20:10,Update README.md,3,0
+2416c2dd,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:20:31,Update README.md,1,1
+a7e2da80,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:21:34,flourish,0,0
+42926b57,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:22:03,Merge branch 'master' of github.com:psf/requests,3,0
+3f21a2d6,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:25:21,shoes and cars,0,0
+26b104ec,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:25:58,Update README.md,2,1
+6fbbbc8c,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:26:17,Update README.md,1,1
+96978370,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:28:35,flower of life,0,0
+6d37433c,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:28:44,Merge branch 'master' of github.com:psf/requests,3,2
+720f1ce6,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:29:25,Update README.md,1,1
+e820ac7c,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:30:45,Update README.md,1,1
+8072d4fd,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:31:23,Update README.md,1,1
+86354252,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:31:48,Update README.md,1,1
+c5d9e121,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:32:18,resize,0,0
+7ce46912,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:32:27,Merge branch 'master' of github.com:psf/requests,2,2
+c2479aea,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:34:08,logo,0,0
+e40a3d60,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:35:33,Update README.md,1,1
+2abe5745,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:37:21,Update README.md,1,1
+76204226,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:37:29,Update README.md,0,0
+9ba6c5e6,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:37:59,Update README.md,1,1
+be7cbe13,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:38:46,Update README.md,1,1
+bc8fa9c2,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:39:46,Update README.md,1,1
+426a1c01,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:40:05,Update README.md,1,1
+bdc92c79,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:41:20,Update README.md,4,1
+60cffb07,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:48:25,Update README.md,10,16
+33e402b2,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:48:48,Update README.md,3,5
+31a6e696,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:51:03,Update README.md,2,5
+2d3b68cf,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:51:22,Update README.md,1,1
+4a87d1e6,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:52:36,Update README.md,1,1
+570dc15b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:52:51,Update README.md,1,1
+846c37c2,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:53:50,Update README.md,3,3
+f3b62442,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:54:03,Update README.md,1,1
+e35ace77,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:55:23,Update README.md,1,2
+a08c421f,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:55:43,Update README.md,1,1
+355e2889,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:56:27,Update README.md,1,1
+d6db3901,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:57:15,Update README.md,1,0
+e63d846b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 15:59:35,Update README.md,20,9
+65a73bd0,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:01:56,Update README.md,18,21
+30c128ad,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:05:51,Update README.md,14,17
+8e190742,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:07:44,Update README.md,9,9
+8074cc8b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:08:42,Update README.md,4,6
+8d09a80a,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:11:31,Update README.md,5,4
+e1eb5697,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:12:00,Update README.md,2,1
+b08073a7,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:12:57,Update README.md,1,3
+fcde6919,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:14:21,Update README.md,1,3
+0f9bcfb8,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:14:44,Update README.md,1,1
+2e992817,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:17:04,Update README.md,1,3
+73a65941,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:17:42,Update README.md,1,1
+33f41b8a,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:18:03,Update README.md,0,1
+b639f177,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:18:41,Update README.md,1,1
+09160445,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:19:37,Update README.md,1,1
+70cc902f,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:19:56,Update README.md,1,1
+24e46d03,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:21:16,Update README.md,1,1
+042ccfcf,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:25:17,license,0,0
+26466b54,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:25:21,Merge branch 'master' of github.com:psf/requests,46,56
+cbccc5f0,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:26:00,Update README.md,3,1
+775813aa,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:26:38,Update README.md,4,2
+80c7cbd4,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:26:52,Update README.md,0,2
+1d41e8dc,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:27:06,Update README.md,1,0
+c6ab21c1,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:27:19,Update README.md,1,1
+316f7482,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:28:17,Update README.md,1,1
+2256fd2b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:28:32,Update README.md,1,1
+80562c9f,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:28:47,Update README.md,1,1
+caf91bd1,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:29:05,Update README.md,1,1
+186dcee8,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:31:58,Update README.md,1,1
+a5bcc9c4,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:35:29,pngsquash,0,0
+6831d2d8,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:35:36,Merge branch 'master' of github.com:psf/requests,8,5
+30a16088,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:37:53,Update README.md,7,10
+e11caeb3,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:38:51,Update README.md,3,0
+abe22b1d,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:39:17,Update README.md,4,1
+be2fe0c6,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:39:30,Update README.md,3,0
+ac9f0d7c,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:40:07,Update README.md,4,4
+a29be8f9,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:42:26,Update LICENSE,1,1
+0f1251bc,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:43:41,Update README.md,4,4
+536b583b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:44:26,Update README.md,2,2
+af85e68f,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:44:37,Update README.md,0,0
+cf77263a,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:45:14,Update README.md,2,2
+a7944ba9,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:46:49,Update README.md,1,1
+75f062dc,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:47:36,Update README.md,1,1
+179f9433,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:48:05,Update README.md,1,1
+99197c20,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:49:43,Update README.md,1,1
+d66ffdbb,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:49:57,Update README.md,1,1
+3ed0f8fb,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:50:39,Update README.md,1,1
+446911b8,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:51:10,Update README.md,1,2
+458496d4,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:51:23,Update README.md,1,1
+de1c200d,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:51:58,Update README.md,2,0
+9f35ebd7,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:52:22,Update README.md,1,0
+0f71067f,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:52:39,Update README.md,2,0
+49acab80,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:54:20,Update FUNDING.yml,1,0
+c21c039e,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:54:31,Update FUNDING.yml,0,1
+dc1526f8,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:55:34,Update README.md,2,0
+f348d518,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:56:04,Update README.md,2,0
+b15bccf3,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:56:18,Update README.md,2,0
+cfdd00f3,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:57:16,Update README.md,1,1
+eb2c1488,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:59:26,Update README.md,9,7
+72176ab9,Kenneth Reitz,me@kennethreitz.org,2019-09-18 16:59:40,Update README.md,0,2
+f8238258,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:01:17,Update README.md,1,1
+a9860c4f,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:02:07,Update README.md,3,2
+c1965119,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:02:36,Update README.md,3,3
+14c32349,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:10:03,deepmind,0,0
+06826504,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:10:10,Merge branch 'master' of github.com:psf/requests,38,21
+a3735e25,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:10:42,Update README.md,1,1
+a025522d,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:25:59,flourish,0,0
+ac851d8a,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:26:03,Merge branch 'master' of github.com:psf/requests,1,1
+92b88fcf,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:26:27,Update README.md,1,1
+1a7d1406,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:33:15,cleanups,58,49
+23fe7293,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:33:21,Merge branch 'master' of github.com:psf/requests,1,1
+9369b5a3,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:37:03,kr,0,0
+87f9a58d,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:37:47,Update README.md,3,0
+4cd65385,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:38:12,Update README.md,5,2
+5099688b,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:38:32,Update README.md,1,0
+fbc5ed55,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:40:18,psf,0,0
+38d9a4f6,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:40:25,Merge branch 'master' of github.com:psf/requests,8,1
+2cb3abea,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:41:05,Update README.md,1,1
+5cb55a84,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:41:33,squash!,0,0
+12640ec2,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:41:40,Merge branch 'master' of github.com:psf/requests,1,1
+9d4fd3c9,Kenneth Reitz,me@kennethreitz.org,2019-09-18 17:47:48,Update README.md,1,1
+2962c236,Peter Schutt,peter_schutt@bigpond.com,2019-09-18 19:09:22,"Fix misspelling 
+
+Just noticed a small typo!",1,1
+14629179,☿ Kenneth Reitz,me@kennethreitz.org,2019-09-19 07:24:42,Update README.md,1,1
+09fd857e,Nate Prewitt,Nate.Prewitt@gmail.com,2019-09-19 22:42:23,"Revert ""Add trusted domains""
+
+This reverts commit fbe48fbb7c5b96cde3a16453311e45f723516afd.",1,8
+afb508f6,Nate Prewitt,Nate.Prewitt@gmail.com,2019-09-19 22:42:23,removing duplicate entry,0,1
+e08981ee,Nate Prewitt,Nate.Prewitt@gmail.com,2019-09-19 22:52:28,updating project url,1,1
+a5f4f3c9,Nate Prewitt,Nate.Prewitt@gmail.com,2019-09-19 23:17:21,"resolve more-itertools py2.7 issues
+
+more-itertools is a transitive testing dependency that no longer supports
+python2.7. In order to keep the test suite going, we're pinning under
+6.0.0 (the breaking version) until we have better syntax in pipfile.",121,23
+189fea7a,Nate Prewitt,nate.prewitt@gmail.com,2019-09-19 23:29:29,"Merge pull request #5197 from 5uper5hoot/patch-1
+
+Fix misspelling",1,1
+0357b072,Nate Prewitt,nate.prewitt@gmail.com,2019-09-19 23:32:13,"Merge pull request #5195 from lzutao/patch-1
+
+Fix formatting of status code example",10,7
+1d3787a0,Kenneth Reitz,me@kennethreitz.org,2019-09-24 02:07:01,AUTHORS.rst,2,4
+729fd3cf,Kenneth Reitz,me@kennethreitz.org,2019-09-24 02:07:17,"Revert ""deepmind""
+
+This reverts commit 14c323492a42415a4ad0a93f669bdf1c1b2e999a.",0,0
+e8a9bd74,Kenneth Reitz,me@kennethreitz.org,2019-09-24 02:17:08,"The Principle of Polarity
+
+Everything is dual; Everything has poles; Everything has its pair of opposites; Like and unlike are the same; Opposites are identical in nature, but different in degree; Extremes meet; All truths, are but half-truths; All paradoxes may be reconciled.",12,14
+c4c60864,☿ Kenneth Reitz,me@kennethreitz.org,2019-09-24 02:28:52,Update README.md,1,1
+1311c96e,☿ Kenneth Reitz,me@kennethreitz.org,2019-09-24 02:29:35,Update README.md,1,1
+5f824fb0,☿ Kenneth Reitz,me@kennethreitz.org,2019-09-24 02:30:16,Update README.md,1,3
+8345819b,☿ Kenneth Reitz,me@kennethreitz.org,2019-09-24 02:31:19,Update README.md,1,0
+0d180a5c,☿ Kenneth Reitz,me@kennethreitz.org,2019-09-24 04:08:40,"Merge pull request #5208 from psf/partII
+
+Part II: The Principle of Polarity",15,20
+01789038,Hugo,hugovk@users.noreply.github.com,2019-09-27 06:06:29,Xenial is now the default,0,1
+6e05165a,Hugo,hugovk@users.noreply.github.com,2019-09-27 06:06:29,Test on Python 3.8 beta,3,1
+74b72ce4,Alex K,Leetcore@users.noreply.github.com,2019-09-30 00:10:59,"documentation link fixed
+
+websites is down, link to requests.readthedocs.io",1,1
+fab1fd10,Ernest W. Durbin III,ewdurbin@gmail.com,2019-09-30 17:52:29,"Merge pull request #5216 from Leetcore/patch-1
+
+documentation link fixed",1,1
+2ff8106d,Hugo,hugovk@users.noreply.github.com,2019-10-22 23:40:03,Test on Python 3.8 final,1,1
+56fd46f9,Nate Prewitt,nate.prewitt@gmail.com,2019-10-25 10:32:25,"Merge pull request #5243 from hugovk/test-3.8-final
+
+Test on Python 3.8 final",1,1
+4cd95aa4,Charles Reid,53452777+chmreid@users.noreply.github.com,2019-10-25 10:46:04,update translation links from http -> https (#5237),14,14
+d2590ee4,Sorin Sbarnea,ssbarnea@users.noreply.github.com,2019-10-25 11:02:55,"Change documentation website to requests.readthedocs.io (#5236)
+
+Fixes: #5212",16,16
+4a540ff5,Matthew Peveler,matt.peveler@gmail.com,2019-10-31 03:15:13,Fix link to requests-threads on community/recommended,1,1
+eedd6746,Nate Prewitt,nate.prewitt@gmail.com,2019-11-23 10:50:54,"Merge pull request #5250 from MasterOdin/patch-1
+
+Fix link to requests-threads in community/recommended doc",1,1
+f462eecf,Hugo,hugovk@users.noreply.github.com,2020-01-06 17:24:02,Update supported Python versions,2,10
+ad18d145,Nate Prewitt,nate.prewitt@gmail.com,2020-01-10 01:06:47,"Merge pull request #5306 from hugovk/update-python-versions-in-faq
+
+Update supported Python versions",2,10
+782e94d1,John Kooker,jkooker@gmail.com,2020-01-10 01:26:42,"Update example code in README.md (#5292)
+
+Show the current project description.",1,1
+a9ee0eef,Sumana Harihareswara,sh@changeset.nyc,2020-01-10 01:55:20,"Add Python 2 support entry in FAQ (#5303)
+
+* Add Python 2 support entry in FAQ
+
+Fixes: #5211
+
+Signed-off-by: Sumana Harihareswara <sh@changeset.nyc>
+
+* Adding Python 3 recommendation
+
+Co-authored-by: Nate Prewitt <nate.prewitt@gmail.com>",12,0
+d2f65af0,Hugo van Kemenade,hugovk@users.noreply.github.com,2020-01-19 23:41:09,Move community files under .github/ (#5206),153,156
+9b95b4e7,johnthagen,johnthagen@users.noreply.github.com,2020-01-22 01:00:51,Add PyPy3 to Travis test suite (#5193),5,1
+7138d8b0,Nick Watts,nick@nawatts.com,2020-01-26 01:09:10,Change link for pip installation instructions,1,1
+7b565d88,Nate Prewitt,nate.prewitt@gmail.com,2020-01-26 02:19:34,"Merge pull request #5325 from nawatts/install-pip-link
+
+Change link for pip installation instructions",1,1
+d5c4cac0,Nick Watts,nick@nawatts.com,2020-01-26 07:19:22,Fix intersphinx_mapping config for Python standard library,1,1
+a9906536,Nate Prewitt,nate.prewitt@gmail.com,2020-02-01 08:24:52,"Merge pull request #5326 from nawatts/intersphinx-mapping-config
+
+Fix intersphinx_mapping config for Python standard library",1,1
+b1631b03,John Samuels,johnsamuels1218@gmail.com,2020-02-18 05:46:26,Update link to pipenv in README.,1,1
+ae0a497b,John Samuels,johnsamuels1218@gmail.com,2020-02-18 05:47:34,Update link to pipenv in installation guide.,1,1
+23f6faa7,Nate Prewitt,nate.prewitt@gmail.com,2020-02-18 13:44:33,"Merge pull request #5346 from stock1218/master
+
+Update pipenv links in README and installation guide.",2,2
+e1130201,Alexander Zhukov,zhukovaa90@gmail.com,2020-02-18 15:19:38,"Fix the syntax highlighting in the example (#5276)
+
+Co-authored-by: Nate Prewitt <nate.prewitt@gmail.com>",2,2
+c46f55bd,Chris Withers,chris@withers.org,2020-02-18 22:58:27,Limit dependencies to major instead of minor (#5342),3,3
+80011a79,Ned Batchelder,ned@nedbatchelder.com,2020-02-19 01:17:21,"Remove an obsolete attribute from __attrs__
+
+The extra attribute in __attrs__ makes an unpickled session have one more attribute than the original.  Removing it makes the original and the unpickled be identical.",1,1
+b15056d1,Nate Prewitt,Nate.Prewitt@gmail.com,2020-02-19 08:56:39,"Revert ""#4965 fix: Accessing response.content twice removes forgets read error.""
+
+This reverts commit bd100472443dcf4189630f6b1ed3ec0a61259dd8.
+
+This reverts commit d91fe00983f1c66b9a428fe1ad15bf6ea8238972.",3,62
+24bcb9ea,Nate Prewitt,Nate.Prewitt@gmail.com,2020-02-19 08:56:39,"Revert ""Use urllib for chunked requests""
+
+This reverts commit 2da7fe08586aeaff614c017a9a834a22c937384a.",58,13
+fd13816d,Nate Prewitt,Nate.Prewitt@gmail.com,2020-02-19 08:56:39,"Revert ""Fix for response with UTF-8 BOM #4976""
+
+This reverts commit 19cff44ec1b8eeec99459b504a681aa440f6344c.
+This reverts commit 9e27326d6843e7c26e9847776159eeb68a999675.
+This reverts commit f507a3ef12ce6e100f68741f68d39bcaf8a70c7a.",0,34
+b7c6aba8,Nate Prewitt,Nate.Prewitt@gmail.com,2020-02-20 02:44:27,v2.23.0,19,3
+ca6f9af5,Redowan Delowar,redowan.nafi@gmail.com,2020-02-24 01:56:46,Normalize exception docstrings (#5338),3,6
+0a760ff0,Nate Prewitt,Nate.Prewitt@gmail.com,2020-02-27 12:21:47,updating pipfile.lock for bleach security issue (#5364),230,184
+65989ddf,Nate Prewitt,Nate.Prewitt@gmail.com,2020-02-27 12:47:28,"changing of the guard
+
+Thanks for everything Ian. Welcome Seth!",3,2
+4fc7f4a2,Nate Prewitt,nate.prewitt@gmail.com,2020-02-28 02:05:07,Update disclosure contact info (#5369),6,4
+2758124a,Seth Michael Larson,sethmichaellarson@gmail.com,2020-02-28 11:33:09,Also update GitHub's Security Disclosure document (#5370),8,8
+bebf5250,Alessio Izzo,alessio.izzo86@gmail.com,2020-03-26 03:44:51,"Remove explicit unicode literal in README.md and doc (#5336)
+
+* [remove] remove ""u"" prefix in README and documentation examples",17,17
+c577eb8d,Dustin Rodrigues,dust.rod@gmail.com,2020-04-04 04:59:17,fix README typo,1,1
+9ea85109,Nate Prewitt,Nate.Prewitt@gmail.com,2020-04-04 05:31:44,fixing rst markup,2,2
+bfb93d4b,Nate Prewitt,Nate.Prewitt@gmail.com,2020-04-04 05:39:06,update bleach security vulnerability,83,103
+db47b9b4,Seth Michael Larson,seth.larson@elastic.co,2020-05-02 07:33:51,Don't use pyOpenSSL unless no SNI is detected,14,6
+251f73f6,Seth Michael Larson,sethmichaellarson@gmail.com,2020-05-02 07:33:51,Add changelog entry for pyOpenSSL change,7,2
+427e8eb1,Miro Hrončok,miro@hroncok.cz,2020-05-09 12:58:03,"Fix test_conflicting_post_params to work on pytest 5 (#5305)
+
+The non-contextmanager form of pytest.raises was removed in pytest 5.
+http://doc.pytest.org/en/latest/deprecations.html#raises-warns-with-a-string-as-the-second-argument
+
+It was used here to support Python < 2.7, but that is no longer needed.
+https://github.com/psf/requests/pull/1503#issuecomment-22333666
+
+Fixes https://github.com/psf/requests/issues/5304",4,2
+9ed5db8e,Thomas Grainger,tagrain@gmail.com,2020-05-09 13:08:51,"fix raise_for_status docstring (#5293)
+
+the exception isn't stored it's created new each call",1,1
+fa2dbe9a,David Black,dblack@atlassian.com,2020-06-15 18:16:47,Remove what appears to be an un-needed call to self.resolve_redirects when not following redirects as part of creating a request's history.,6,4
+2b3436e0,Nate Prewitt,nate.prewitt@gmail.com,2020-06-15 22:44:38,"Merge pull request #5492 from dbaxa/avoid-calling-resolve_redirects-whe-not-following-redirects
+
+Remove what appears to be an un-needed call to self.resolve_redirects when not following redirects as part of creating a request's history.",6,4
+8ac5929a,Kevin Kirsche,Kev.Kirsche+GitHub@gmail.com,2020-06-15 23:23:17,Fix typo in README (#5468),1,1
+737dd0c3,Bharat Raghunathan,bharatraghunthan9767@gmail.com,2020-06-16 03:56:07,"Update number of dependents on requests (#5495)
+
+* Update dependents on requests",1,1
+71a05cf2,David Black,dblack@atlassian.com,2020-06-16 18:53:07,Avoid an unnecessary computation of the length of data for non-stream requests (which determines content-length based upon body content).,5,5
+7c719822,Nate Prewitt,nate.prewitt@gmail.com,2020-06-17 23:21:38,"Merge pull request #5496 from dbaxa/optimise-prepare-body
+
+Avoid an unnecessary computation of the length of data for non-stream requests (which determine content-length based upon body content).",5,5
+daa2b297,Nate Prewitt,Nate.Prewitt@gmail.com,2020-06-17 23:50:25,updating usage information,2,2
+0797c61f,Nate Prewitt,Nate.Prewitt@gmail.com,2020-06-17 23:50:25,v2.24.0,12,2
+1ca1c52e,Kartik Chugh,kartikchugh.kc@gmail.com,2020-06-18 04:09:34,"Google App Engine (#5475)
+
+* Continuity: Google App Engine",2,2
+9cae7be9,Nick Krichevsky,nick@ollien.com,2020-06-19 10:06:41,"Clarify that PreparedRequests should not be manually created
+
+Closes #5504",3,1
+8149e9fe,Nate Prewitt,nate.prewitt@gmail.com,2020-06-20 00:04:21,"Merge pull request #5505 from ollien/prepared-requests-docs-correction
+
+Clarify that PreparedRequests should not be manually created",3,1
+1b417634,Nate Prewitt,Nate.Prewitt@gmail.com,2020-06-27 02:51:20,cleanup advanced docs header,0,2
+2d39c0db,Ben Bodenmiller,bbodenmiller@gmail.com,2020-07-24 12:57:30,"Docs: list CURL_CA_BUNDLE as supported (#5509)
+
+* Docs: list CURL_CA_BUNDLE as supported",1,0
+02eb5a2c,Matt Silverlock,matt@eatsleeprepeat.net,2020-08-17 10:31:05,Document the dangers of using verify=False,19,1
+533c384b,Seth Michael Larson,sethmichaellarson@gmail.com,2020-08-19 06:13:59,Make README markdown compatible,27,91
+08300621,Seth Michael Larson,sethmichaellarson@gmail.com,2020-08-19 06:13:59,"Remove images, analytics, 'keep up to date'",2,204
+551a0bf0,Seth Michael Larson,sethmichaellarson@gmail.com,2020-08-19 06:13:59,"Recommend Pip, remove todo/philo docs, pare down support avenues",8,203
+43ed689d,Seth Michael Larson,sethmichaellarson@gmail.com,2020-08-19 06:13:59,"Trim release section, add back Twitter support",14,12
+0b013558,Seth Michael Larson,sethmichaellarson@gmail.com,2020-08-19 06:13:59,Pin more helpful links to sidebar,27,3
+48237afd,Nate Prewitt,Nate.Prewitt@gmail.com,2020-08-19 06:13:59,updating doc links and formatting,4,3
+2a7832b5,Sagar Giri,girisagar46@gmail.com,2020-08-26 08:50:13,"Update index.rst
+
+Update misleading text about python support",1,1
+22b5a390,Andrew Jorgensen,ajorgens@amazon.com,2020-08-28 00:44:27,"Apply the Apache-2.0 license correctly
+
+This follows instructions from the Apache Foundation. It also ensures
+that the license will be correctly detected by license scanning tools.
+
+Note that by adding a NOTICE file triggers Section 4.d of the license,
+which is usually intended by users of the license.
+
+The text that was in the LICENSE file before this change is intended
+(by the authors of the license) to be used as a file header, and not as
+a full license notice for a project, but it is commonly used this way,
+so I would of course understand if this change is rejected.",174,10
+1f7c8888,Nate Prewitt,nate.prewitt@gmail.com,2020-08-28 02:09:01,"Merge pull request #5570 from ajorg-aws/master
+
+Apply the Apache-2.0 license correctly",174,10
+967a05bf,Martin,Visgean@gmail.com,2020-09-11 23:36:21,Update renamed GitHub handle,1,1
+c3280d78,Ruben,ruben.m.menke@gmail.com,2020-09-23 19:19:29,"Update advanced.rst
+
+replaced reference to requests-async with httpx the replacement project",2,2
+333fa8d3,Ae-Mc,43097289+Ae-Mc@users.noreply.github.com,2020-09-29 23:36:31,Remove reading HISTORY.md in setup.py,0,2
+ae614459,Abdullah Selek,abdullahselek@gmail.com,2020-10-01 03:52:35,Add official Python 3.8 support on Appveyor,5,0
+799a97d3,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2020-10-01 04:35:12,"Merge pull request #5608 from abdullahselek/master
+
+Add official Python 3.8 support on Appveyor",5,0
+941ac53b,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2020-10-01 22:19:34,Create codeql-analysis.yml,71,0
+d09c0e0f,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2020-10-03 03:06:24,"Update codeql-analysis.yml
+
+Remove proposed/3.0.0 branch, only ever run against Python sans matrix option",3,8
+4f6c0187,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2020-10-03 06:10:53,"Merge pull request #5611 from psf/add-codescanning
+
+Create codeql-analysis.yml",66,0
+4840d4a3,Jonathan,jinqiangzhao2017@gmail.com,2020-10-05 08:45:07,"small typo corrected.
+
+a small typo was corrected.",1,1
+14315023,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2020-10-06 02:15:43,"Merge pull request #5614 from smstong/master
+
+small typo corrected.",1,1
+ba543713,Mathieu Pichette,mpichette@apple.com,2020-11-01 12:01:30,Respect the NETRC environment variable,10,3
+2f70990c,Nate Prewitt,nate.prewitt@gmail.com,2020-11-02 00:52:01,"Merge pull request #5643 from tarmath/netrc
+
+Respect the NETRC environment variable",10,3
+9cd2d334,Nate Prewitt,Nate.Prewitt@gmail.com,2020-11-12 02:29:13,Move CI to Github Actions,44,324
+320a10d1,Nate Prewitt,Nate.Prewitt@gmail.com,2020-11-12 02:29:13,Remove Pipfile/Pipfile.lock,4,794
+03957eb1,Nate Prewitt,Nate.Prewitt@gmail.com,2020-11-12 03:55:50,v2.25.0,25,6
+78fdf4dd,Nate Prewitt,Nate.Prewitt@gmail.com,2020-11-17 02:44:31,Remove reference to development philosophy,2,5
+28cc1d23,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2020-11-17 03:19:05,"Merge pull request #5659 from nateprewitt/contrib_cleanup
+
+Remove reference to development philosophy",2,5
+962c8986,Nate Prewitt,nate.prewitt@gmail.com,2020-11-17 09:31:39,"Merge pull request #5594 from icfly2/patch-1
+
+Update advanced.rst",2,2
+0514dea6,Hugo van Kemenade,hugovk@users.noreply.github.com,2020-11-18 15:00:23,"Pin GHA to Ubuntu 18.04
+
+`ubuntu-latest` points to 18.04 and will soon flip to 20.04.
+
+However tests currently fail on 20.04, so let's explicitly pin to 18.04 for now.",1,1
+9ce669e3,Nate Prewitt,nate.prewitt@gmail.com,2020-11-19 00:32:02,"Merge pull request #5663 from hugovk/patch-1
+
+Pin GHA to Ubuntu 18.04",1,1
+4b66260c,Sylvain MARIE,sylvain.marie@se.com,2020-11-27 18:51:16,New helper method `set_http_proxy` in `Session` to set proxies in a more user friendly way,120,0
+2fddbe36,Sylvain MARIE,sylvain.marie@se.com,2020-11-27 18:51:47,Updated proxies documentation,35,1
+d1ca591c,Sylvain MARIE,sylvain.marie@se.com,2020-11-28 00:05:17,"Revert ""New helper method `set_http_proxy` in `Session` to set proxies in a more user friendly way""
+
+This reverts commit 4b66260c",0,120
+f02a80cb,Sylvain MARIE,sylvain.marie@se.com,2020-11-28 00:44:13,Updated proxies documentation,28,20
+d0359c94,Kaartic Sivaraam,kaartic.sivaraam+github@gmail.com,2020-11-29 02:21:02,Fix broken link,1,1
+5855dd71,jason,jjmaldonis@gmail.com,2020-11-30 01:51:41,"updated `get_encoding_from_headers` to return utf-8 if the content type is set to application/json, following RFC 4627.
+
+fixes #5667",4,0
+589c4547,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2020-11-30 02:19:15,"Merge pull request #5673 from jjmaldonis/master
+
+updated `get_encoding_from_headers` to return utf-8 if the content type is set to application/json",4,0
+5035827b,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2020-12-05 03:38:17,"Merge pull request #5670 from smarie/pr_proxy_conf_helper_and_doc
+
+Proxy related doc updates",47,5
+60ea7f0c,Mateus Dubiela Oliveira,mateusduboli@gmail.com,2020-12-09 01:37:18,#5677: Rebuild proxies on Session#send,40,1
+d3e0f733,Ernest W. Durbin III,ewdurbin@gmail.com,2020-12-09 22:03:57,"Update sponsorship link
+
+PSF relaunched new sponsorship program and the URL has changed.",1,1
+516f84f4,Dan Blanchard,dan.blanchard@gmail.com,2020-12-11 23:31:38,Upgrade to chardet 4.x,3,5
+b2232916,Nate Prewitt,nate.prewitt@gmail.com,2020-12-15 01:29:10,"Merge pull request #5688 from dan-blanchard/patch-1
+
+Upgrade to chardet 4.x",3,5
+6de4f104,Shouro,sourogts@gmail.com,2020-12-15 07:49:49,Change docs title to requests.sessions,2,2
+c2b307db,Nate Prewitt,Nate.Prewitt@gmail.com,2020-12-17 03:34:26,v2.25.1,13,2
+f6072f1e,Ben Bodenmiller,bbodenmiller@gmail.com,2021-01-20 09:27:56,Format c_rehash,1,1
+083aa67a,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-01-20 22:58:35,"Merge pull request #5723 from bbodenmiller/patch-2
+
+Format c_rehash",1,1
+74b72800,XiaojueGuan,guanalbertjone@gmail.com,2021-01-22 21:41:39,Fix typo request -> requests,1,1
+8c211a96,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-01-25 06:59:46,"Merge pull request #5681 from mateusduboli/5677
+
+5677: Rebuild proxies on Session#send",40,1
+ef6ceffc,Peter David McCormick,peter@pdmccormick.com,2021-02-18 04:38:48,Provide directions for cloning repository despite malformed commits,16,0
+bdc00eb0,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-02-18 05:37:02,"Merge pull request #5755 from pdmccormick/master
+
+Provide directions for cloning repository despite malformed commits",16,0
+913880c4,Andrew M. White,andrewmwhite@gmail.com,2021-02-25 01:19:48,Fix typo,1,1
+06462a6e,Christian Clauss,cclauss@me.com,2021-03-18 17:06:14,"quickstart.rst: r.json() can raise JSONDecodeError on Py3
+
+% `python2 -c ""import requests ; requests.get('https://github.com').json()""`
+% `python3 -c ""import requests ; requests.get('https://github.com').json()""`",3,1
+4193b95d,Christian Clauss,cclauss@me.com,2021-03-18 19:27:02,simplejson.JSONDecodeError may be raised on Py2 and Py3,3,3
+f79d1ef4,Christian Clauss,cclauss@me.com,2021-03-18 20:19:28,Also update requests.models.Response,6,1
+54336568,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-03-18 22:36:34,"Merge pull request #5777 from cclauss/patch-1
+
+quickstart.rst: r.json() can raise JSONDecodeError on Py3",9,2
+c2674158,laggardkernel,laggardkernel@users.noreply.github.com,2021-03-20 00:44:19,"Remove call to set default value for allow_redirects
+
+The call to kwargs.setdefault was redundant and unnecessary as the lower-level session defaults to true.",0,2
+2c2138e8,Hans96,42208098+armangido@users.noreply.github.com,2021-03-20 06:09:29,"Update setup.py (#5780)
+
+Removed `import re` as unnecessary import",0,1
+c45a4dfe,Coco Mishra,kittenishkoko@gmail.com,2021-04-12 00:25:49,grammar fix (#5791),1,1
+05a1a215,tallalnparis4ev,47358379+tallalnparis4ev@users.noreply.github.com,2021-05-07 02:18:58,"Throw value error when serializing JSON object with NaN value (#5810)
+
+* disallow nan values in json serialize
+
+* test nan value in json post
+
+* added exception for invalid json in request
+
+* use invalid json exception
+
+* invalid json test",17,3
+f6d43b03,Mark Bell,MarkCBell@users.noreply.github.com,2021-05-08 00:54:37,"Updated to new be-cordial-or-be-on-your-way URL and CoC now references Python Community CoC (#5811)
+
+* Updated references to new be-cordial-or-be-on-your-way URL.
+
+* CoC now references Python Community Code of Conduct",6,3
+1466ad71,Francois Marier,francois@fmarier.org,2021-06-01 12:23:54,"Fix GitHub links (#5835)
+
+All of these links now redirect to a repo under a different GitHub
+user account.",3,3
+33d448eb,TAHRI Ahmed R,Ousret@users.noreply.github.com,2021-07-07 04:39:50,"Pin Flask to <2.0 to fix the test suite
+
+httpbin does not limit Flask version and the 2.0 release has broken compatibility with our test suite",1,0
+2ed84f55,Ash Berlin-Taylor,ash_github@firemirror.com,2021-07-07 07:55:02,"Switch LGPL'd chardet for MIT licensed charset_normalizer (#5797)
+
+Although using the (non-vendored) chardet library is fine for requests
+itself, but using a LGPL dependency the story is a lot less clear
+for downstream projects, particularly ones that might like to bundle
+requests (and thus chardet) in to a single binary -- think something
+similar to what docker-compose is doing. By including an LGPL'd module
+it is no longer clear if the resulting artefact must also be LGPL'd.
+
+By changing out this dependency for one under MIT we remove all
+license ambiguity.
+
+As an ""escape hatch"" I have made the code so that it will use chardet
+first if it is installed, but we no longer depend upon it directly,
+although there is a new extra added, `requests[lgpl]`. This should
+minimize the impact to users, and give them an escape hatch if
+charset_normalizer turns out to be not as good. (In my non-exhaustive
+tests it detects the same encoding as chartdet in every case I threw at
+it)
+
+Co-authored-by: Jarek Potiuk <jarek@potiuk.com>
+
+Co-authored-by: Jarek Potiuk <jarek@potiuk.com>",119,27
+24630743,Bernát Gábor,gaborjbernat@gmail.com,2021-07-07 08:14:51,"Avoid zip extract racing condition by using read+write instead extract (#5707)
+
+Extract also creates the folder hierarchy, however we do not need that,
+the file itself being extracted to a temporary folder is good enough.
+Instead we read the content of the zip and then write it. The write is
+not locked but it's OK to update the same file multiple times given the
+update operation will not alter the content of the file. By not creating
+the folder hierarchy (default via extract) we no longer can run into the
+problem of two parallel extracts both trying to create the folder
+hierarchy without exists ok flag, and one must fail.
+
+Resolves #5223.
+
+Signed-off-by: Bernát Gábor <bgabor8@bloomberg.net>",18,3
+53514694,Дилян Палаузов,dpa-github@aegee.org,2021-07-07 21:16:28,"Add support for brotli decoding (#5783)
+
+* Add support for Brotli decoding
+
+When the brotli or brotlicffi packages are installed,
+urllib3.util.make_headers() inserts ',br' in the Accept-Encoding header
+and decodes br from the answers.
+
+* Create the default Accept-Encoding header once
+
+* Preserve the previous delimiter behavior
+
+* Update prose in quickstart.rst
+
+Co-authored-by: Seth Michael Larson <sethmichaellarson@gmail.com>",15,1
+33cf965f,Naor Livne,naorlivne@gmail.com,2021-07-07 21:25:20,"Allow idna 3.x to be installed on Python 3.x
+
+Co-authored-by: Mickaël Schoentgen <contact@tiger-222.fr>
+Co-authored-by: Seth Michael Larson <sethmichaellarson@gmail.com>",2,1
+f6c0619d,Nate Prewitt,Nate.Prewitt@gmail.com,2021-07-10 03:40:55,Disable requests[security] and remove 3.5 support references,14,8
+e253eba5,Quentin Pradet,quentin@pradet.me,2021-07-12 22:44:43,"Stop abusing pytest-httpbin to test commonName support
+
+pytest-httpbin<1.0 ships with a server certificate with a commonName but
+no subjectAltName. urllib3 2.0 will stop supporting those in the future,
+so we want to upgrade pytest-httpbin.
+
+Unfortunately, `test_https_warnings` was relying on this broken
+certificate. With this change, we use `trustme` to create a broken
+certificate specifically for this test, so that we can upgrade
+pytest-httpbin and make sure that other tests relying on httpbin TLS
+support will continue to work with urllib3 2.0.",39,4
+a1a6a549,Nate Prewitt,Nate.Prewitt@gmail.com,2021-07-13 22:52:02,v2.26.0,24,7
+a5b45edf,Steve Berdy,86739818+steveberdy@users.noreply.github.com,2021-07-17 02:06:42,Update api.rst (#5877),2,2
+a3d54b83,Egor,Akay7@users.noreply.github.com,2021-07-18 18:59:37,"Update advanced.rst (#5821)
+
+* Update advanced.rst
+
+* remove confusing euphemism",1,1
+941a77f2,Jeremy Cline,github@declined.dev,2021-07-20 00:44:02,docs: Update the Red Hat vulnerabilities contact (#5881),1,1
+db575eee,Steve Berdy,86739818+steveberdy@users.noreply.github.com,2021-07-26 23:56:44,Fix inconsistent exception type in response.json() method (#5856),47,18
+b227e3cb,Michał Górny,mgorny@gentoo.org,2021-07-29 00:23:08,"Fix creating non-listening sockets in tests on some platforms (#5890)
+
+Fix the listen() invocation for the test server not to pass a backlog
+value of zero.  The value of zero means no backlog which effectively
+means that the socket can not accept any connections.  This does not
+matter for the majority of platforms since the value is only advisory
+and the platform tends to go with a bigger backlog anyway.  However,
+a few platforms (e.g. alpha or riscv Linux) do take the value literally,
+and therefore the tests fail since they are unable to connect to
+the server.",3,1
+d8829f9f,Thomas Lam,79589038+tl-hbk@users.noreply.github.com,2021-08-03 08:40:34,Fix extract_zipped_paths infinite loop when provided invalid unc path (#5851),8,0
+b0e025ad,Israel Tsadok,itsadok@gmail.com,2021-08-04 13:58:51,Fix broken link to adapters essay (#5899),1,1
+2d30aeb7,Ben Li-Sauerwine,bsauerwine@gmail.com,2021-08-25 10:00:17,Add a test which verifies that ChunkedEncodingError is emitted if an invalid Transfer-Encoding: chunked response is returned. (#5906),22,0
+827b87b9,Борис Верховский,boris.verk@gmail.com,2021-08-26 00:48:30,Formatting (#5910),2,2
+7adb8686,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-08-26 02:21:35,Add thread locker workflow (#5909),15,0
+8ea90a5c,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-08-26 02:44:57,"Shorten the window before we lock threads
+
+Per Nate's recommendation, let's lock things after 90 days rather than
+360",2,0
+70a13e2a,Nate Prewitt,nate.prewitt@gmail.com,2021-08-26 09:04:43,Fix syntax error in lock action (#5912),3,2
+b351e906,Nate Prewitt,nate.prewitt@gmail.com,2021-08-26 18:58:35,Update codeql branch target (#5913),2,2
+10968357,Nate Prewitt,nate.prewitt@gmail.com,2021-08-27 09:11:30,Appropriately handle urllib3's InvalidHeader exception (#5914),30,1
+aae78010,Ben Li-Sauerwine,bsauerwine@gmail.com,2021-08-28 02:49:51,Time out requests' tests after 10 minutes. (#5916),1,1
+6fbfca90,hodbn,hodbn@users.noreply.github.com,2021-09-02 15:53:08,"Send only one Host header in chunked request
+
+Closes #5274",30,1
+4ab2550d,Nate Prewitt,Nate.Prewitt@gmail.com,2021-09-02 16:53:34,Add test for default chunked Host header,36,14
+9572d6a2,Nate Prewitt,nate.prewitt@gmail.com,2021-09-02 23:53:46,General doc updates (#5923),20,10
+248122a6,Nate Prewitt,nate.prewitt@gmail.com,2021-09-04 10:03:15,Add support for 3.10 (#5928),3,2
+1e5fad74,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-09-08 08:00:31,"Update lock-issues.yml (#5930)
+
+Run this hourly. I'm not seeing any effects, let's see if
+running it more frequently will allow it to avoid the GitHub ratelimit
+
+https://github.com/dessant/lock-threads#why-are-only-some-issues-and-pull-requests-processed",1,1
+fc106ab5,Kevin Kirsche,kevin.kirsche@one.verizon.com,2021-09-15 19:43:12,fix minor typos (#5934),5,5
+94f9f735,Борис Верховский,boris.verk@gmail.com,2021-09-22 07:22:12,Don't mention pip as the reason for supporting py2 (#5940),1,4
+9dd6e47b,Nate Prewitt,nate.prewitt@gmail.com,2021-10-10 06:03:33,Add doc build requirements for RTD (#5956),3,0
+590350f8,Alan Yee,alanyee@users.noreply.github.com,2021-10-22 02:06:33,"Update Bug_report.md (#5965)
+
+Add some highlighting and comment out the instructions so that the submitter can see it but it is not displayed in the GitHub issue",9,7
+e2fa8d36,sha016,sha0160@protonmail.com,2021-11-14 10:58:30,mention all_proxy env variable in Proxies section,4,4
+99b3b492,Nate Prewitt,nate.prewitt@gmail.com,2021-11-25 03:21:01,"Refactor rebuild_proxies to allow proxy resolution (#5924)
+
+without stripping Proxy-Authorization header",45,18
+55da533a,Michał Górny,mgorny@gentoo.org,2021-11-28 01:47:56,"Defer the trustme import until inside the fixture
+
+Move the trustme import from global scope into the nosan_server fixture
+in order to make it possible to deselect the test via command-line
+when trustme is not available.",4,1
+e77dd8de,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-11-28 09:20:17,"Merge pull request #5990 from mgorny/trustme-test-dep
+
+Skip the test requiring trustme when it is not available",4,1
+2d2447e2,David Hotham,david.hotham@microsoft.com,2021-11-29 04:04:49,"Catch AttributeError in utils.super_len (#5239)
+
+* Catch AttributeError in utils.super_len
+
+This allows it to handle files obtained via `Tarfile.extractfile()`.",22,3
+7556ea42,Nate Prewitt,nate.prewitt@gmail.com,2021-11-29 23:58:31,"Merge pull request #5391 from hodbn/fix-5274
+
+Send only one Host header in chunked request",52,1
+8e764f35,David Glick,david@glicksoftware.com,2021-11-30 11:20:47,Run tox in parallel using -p instead of detox,1,1
+c193d974,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-11-30 22:07:59,"Merge pull request #5993 from davisagli/tox-parallel
+
+Run tox in parallel using -p instead of detox",1,1
+39d0fdd9,Abhinav Vashisth,89785800+vashisthabhinav@users.noreply.github.com,2021-12-05 18:52:10,Update README.md (#5998),1,1
+658c10e8,Álvaro Mondéjar,mondejar1994@gmail.com,2021-12-29 05:24:24,Raise InvalidURL if hosts starts with '.' as was reported at #5367.,3,1
+4246792b,Nate Prewitt,nate.prewitt@gmail.com,2021-12-29 08:32:48,Fix erroneous use of 'schema' instead of 'scheme',3,3
+401e17bb,Nate Prewitt,nate.prewitt@gmail.com,2021-12-29 09:07:01,Update basic auth example,3,2
+e2064a2c,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-12-29 09:38:35,"Merge pull request #6018 from nateprewitt/basic_auth_update
+
+Update basic auth example",3,2
+2b06a952,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-12-29 09:39:08,"Merge pull request #6017 from nateprewitt/schema2scheme
+
+Fix erroneous use of 'schema' instead of 'scheme'",3,3
+d0965999,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-12-29 09:39:36,"Merge pull request #5414 from mondeja/5367
+
+Raise InvalidUrl if host starts with '.' character.",3,1
+ef59aa02,Nate Prewitt,Nate.Prewitt@gmail.com,2021-12-29 12:12:00,Move from urlparse to parse_url for prepending schemes,16,6
+0d5347e6,Nate Prewitt,nate.prewitt@gmail.com,2021-12-29 13:10:51,"Only compute should_bypass_proxies if needed
+
+Co-authored-by: David Black <dblack@atlassian.com>",1,2
+86bbee71,Nate Prewitt,nate.prewitt@gmail.com,2021-12-29 13:28:30,Update 3.10-dev to 3.10 and add pypy-3.7,3,1
+28d537dd,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-12-29 21:31:40,"Merge pull request #5917 from nateprewitt/proxy_scheme_unknown_fix
+
+Move from urlparse to parse_url for prepending schemes",16,6
+b0829a86,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2021-12-29 21:32:11,"Merge pull request #6020 from nateprewitt/pypy_37
+
+Update 3.10-dev to 3.10 and add pypy-3.7 in CI",3,1
+77d1e9aa,Nate Prewitt,nate.prewitt@gmail.com,2021-12-30 01:06:05,"Merge pull request #5894 from dbaxa/do-not-re-build-proxies-when-proxies-have-been-provided
+
+Prevent unnecessary should_bypass_proxies checks in rebuild_proxies",1,2
+ab38e2c7,Greg Dubicki,grzegorz.dubicki@gmail.com,2021-12-30 01:46:21,"Make the `data` vs `json` parameters more clear (#5382)
+
+As https://stackoverflow.com/q/26685248/2693875 question
+and answer popularity shows that there is a lot of people who
+do not understand the distinction.",6,4
+17e6e27a,Nate Prewitt,nate.prewitt@gmail.com,2021-12-30 06:29:09,General cleanup for 2.27.0,14,10
+e50dc12b,Nate Prewitt,nate.prewitt@gmail.com,2022-01-03 13:20:40,Fix doc link,1,1
+0192aac2,Nate Prewitt,nate.prewitt@gmail.com,2022-01-03 22:59:10,v2.27.0,48,8
+38f3f8ec,Nate Prewitt,nate.prewitt@gmail.com,2022-01-04 23:27:23,"Fix auth parsing for proxies
+
+Co-authored-by: adamp01 <@adamp01>",12,0
+8fa97243,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2022-01-05 00:04:25,"Merge pull request #6028 from nateprewitt/prox_auth_fix
+
+Fix auth parsing for proxies",12,0
+31a89d9c,Nate Prewitt,nate.prewitt@gmail.com,2022-01-05 23:35:04,v2.27.1,10,2
+620ed4fc,Marwan,marwan@automne.me,2022-01-07 01:57:59,Move socks testing requirement into requirements-dev.txt (#6035),1,1
+d718e753,Nate Prewitt,nate.prewitt@gmail.com,2022-01-08 03:07:31,Start testing on 3.11 dev branch (#6037),5,0
+48676caf,Nate Prewitt,nate.prewitt@gmail.com,2022-01-11 23:24:39,Disable lock-threads on forks,1,0
+d15a3b6e,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2022-01-12 01:42:00,"Merge pull request #6042 from nateprewitt/lock_thread_spam
+
+Disable lock-threads on forks",1,0
+fa1b0a36,chyzzqo2,52714809+chyzzqo2@users.noreply.github.com,2022-01-13 23:42:49,"Initialize JsonDecodeError before initializing IOError (#6036)
+
+That way we get the formated error message
+
+Co-authored-by: Peter <cHYzZQo@netflix.com>",23,3
+24dfbfde,Chavithra,chavithra@gmail.com,2022-01-18 02:30:24,Update quickstart.rst : fixing brotlicffi link (#6044),1,1
+2c20474b,Seth Michael Larson,sethmichaellarson@gmail.com,2022-02-03 01:56:27,Update advanced.rst,2,1
+7ae38876,Nate Prewitt,nate.prewitt@gmail.com,2022-02-03 02:03:26,"Merge pull request #5978 from sha016/all-proxy-docs
+
+Co-authored-by: Seth Michael Larson <sethmichaellarson@gmail.com>",3,2
+95f45673,Nate Prewitt,nate.prewitt@gmail.com,2022-02-06 02:56:05,Wrap urllib3's SSLError as requests' SSLError (#6057),55,5
+15fde024,Nate Prewitt,nate.prewitt@gmail.com,2022-02-19 09:18:23,Reword proxies section and add warning,13,4
+3ed60078,Nate Prewitt,nate.prewitt@gmail.com,2022-02-19 09:33:43,Fix jinja,4,1
+3eed0512,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2022-02-19 21:34:48,"Merge pull request #6069 from nateprewitt/jinja_fix
+
+Pin markupsafe for older versions of Jinja2",4,1
+5e749546,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2022-02-20 07:04:06,"Merge pull request #6068 from nateprewitt/sess_prox_warn
+
+Reword proxies section and add warning",13,4
+79c4a017,Nate Prewitt,nate.prewitt@gmail.com,2022-02-26 02:25:20,Fix environment CA Bundle resolution,49,6
+79f60274,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2022-02-26 21:39:28,"Merge pull request #6074 from nateprewitt/curl_ca_bundle
+
+Fix environment CA Bundle resolution",49,6
+8bce583b,Nate Prewitt,nate.prewitt@gmail.com,2022-03-26 00:50:33,"Farewell, sweet Concorde!
+
+Formally removing any remaining vestiges of Python 2 from Requests.
+We'll also leave behind Python 3.6 while we're at it.",141,180
+2d551768,Nate Prewitt,nate.prewitt@gmail.com,2022-03-29 02:51:27,"Fix inconsistent exception for JSONDecode error (#6097)
+
+When calling .json() it was possible to raise a
+requests.exceptions.JSONDecodeError or ValueError
+depending on whether the encoding is set.",26,0
+2a6f290b,Nate Prewitt,nate.prewitt@gmail.com,2022-04-30 03:16:58,Add automatic code formatting to Requests (#6095),2830,2399
+40956723,Nate Prewitt,nate.prewitt@gmail.com,2022-04-30 05:39:22,Add .git-blame-ignore-revs,5,0
+cb233a10,Mickaël Schoentgen,contact@tiger-222.fr,2022-05-11 09:04:17,Fix several ResourceWarnings in test_requests.py (#4766),44,38
+79f2ec3a,davidshivaji,73458493+davidshivaji@users.noreply.github.com,2022-05-14 00:36:13,Grammar fix (#6133),1,1
+a5e7169e,Nate Prewitt,nate.prewitt@gmail.com,2022-05-27 03:45:57,Cleanup the docs sidebar (#6144),0,83
+210095fd,Nate Prewitt,nate.prewitt@gmail.com,2022-06-02 01:36:26,Tolerate bad registry entries in Windows proxy settings (#6149),34,1
+0f358eab,Nate Prewitt,nate.prewitt@gmail.com,2022-06-02 01:51:04,Reduce lock thread runs to daily (#6150),2,2
+3af2f456,Olivier Gayot,olivier.gayot@sigexec.com,2022-06-09 00:02:42,"Fix output of test_lowlevel tests in case of timeout (#6136)
+
+Signed-off-by: Olivier Gayot <olivier.gayot@canonical.com>",2,1
+60865f21,Nate Prewitt,nate.prewitt@gmail.com,2022-06-09 00:12:53,Run 3.11 CI on all platforms (#6155),1,4
+e36f3459,Nate Prewitt,nate.prewitt@gmail.com,2022-06-09 02:03:56,Add valdation for header name (#6154),72,62
+1dcf3b71,Nate Prewitt,nate.prewitt@gmail.com,2022-06-09 03:11:11,Add GitHub action to automate linting (#6157),16,0
+da9996fe,Nate Prewitt,nate.prewitt@gmail.com,2022-06-09 22:42:10,v2.28.0,26,7
+73793ce4,Wong Hoi Sing Edison,hswong3i@gmail.com,2022-06-28 10:25:58,"Update Dependency with `chardet>=3.0.2,<6` (#6179)
+
+https://github.com/chardet/chardet/releases/tag/5.0.0 was released on
+2022-06-25 with remove of Python 3.6 support, which also align with our
+Python > 3.6 requirement.
+
+Signed-off-by: Wong Hoi Sing Edison <hswong3i@pantarei-design.com>",3,3
+0e28c8f1,Lumír 'Frenzy' Balhar,frenzy.madness@gmail.com,2022-06-29 10:01:42,Allow charset normalizer >=2 and <3 (#6169),2,2
+16b418b4,Kevin Kirsche,kevin.kirsche@one.verizon.com,2022-06-29 10:08:26,Use yield from instead of looping yield (#6170),1,2
+4d394574,Nate Prewitt,nate.prewitt@gmail.com,2022-06-29 23:09:11,v2.28.1,14,2
+bda7f017,Sergey Lyapustin,s.lyapustin@gmail.com,2022-06-30 02:41:49,Fixed warnings message to suggest using secure protocol. (#6188),1,1
+78625561,Miloslav Pojman,miloslav.pojman@gmail.com,2022-07-21 07:13:36,Remove Python 2 mention from tox (#6200),1,1
+177dd90f,David Cain,davidjosephcain@gmail.com,2022-07-28 01:22:21,Remove Python 2 mention on `chardet` behavior (#6204),2,3
+da246958,Jaap Roes,jaap.roes@gmail.com,2022-09-07 15:48:59,"Fix CURL_CA_BUNDLE override example
+
+Promote REQUESTS_CA_BUNDLE as it is looked at first",3,3
+7104ad4b,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2022-09-10 03:10:14,"Merge pull request #6234 from jaap3/patch-1
+
+Fix CURL_CA_BUNDLE override example",3,3
+c57f1f0c,deedy5,65482418+deedy5@users.noreply.github.com,2022-10-21 02:26:18,Allow charset normalizer >=2 and <4 (#6261),4,4
+7908ad3a,reeko234,jasonjoywinmorre@gmail.com,2022-10-21 15:42:58,JSONDecodeError included in the documentation #6260,1,0
+1e62a3ec,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2022-10-22 00:37:47,"Merge pull request #6262 from winmorre/docs-update/#6260
+
+JSONDecodeError included in the documentation",1,0
+53a05623,Volker Schaus,volker.schaus@esa.int,2022-10-24 02:35:43,change to SPDX conform license string,1,1
+19208357,Olivia Crain,olivia@olivia.dev,2022-11-22 04:01:02,Replace git protocol URL in docs with an HTTPS URL,1,1
+ac3be98b,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2022-11-22 06:06:01,"Merge pull request #6291 from oliviacrain/docs/git-clone-protocol
+
+Replace git protocol URL in docs with an HTTPS URL",1,1
+ec553c27,ch-iv,108201575+ch-iv@users.noreply.github.com,2022-12-26 12:24:16,Update flake8 repo and version (#6317),2,2
+2745db13,Bruno Alla,browniebroke@users.noreply.github.com,2023-01-07 02:32:31,Switch to Python 3.11 final on CI and add to tox file (#6325),2,2
+eb07385b,Ashish Kurmi,100655670+boahc077@users.noreply.github.com,2023-01-12 06:06:53,"ci: add minimum GitHub token permissions for workflows (#6236)
+
+Signed-off-by: Ashish Kurmi <akurmi@stepsecurity.io>",13,0
+61c324da,Nate Prewitt,nate.prewitt@gmail.com,2023-01-13 00:16:09,v2.28.2,14,3
+16a17a3c,Matthew Feickert,matthew.feickert@cern.ch,2023-01-19 13:37:24,"fix: Remove '<4' from python_requires (#6333)
+
+* As discussed in https://discuss.python.org/t/use-of-less-than-next-major-version-e-g-4-in-python-requires-setup-py/1066
+  and other places by the PyPA, use of upper bounds with python_requires
+  for future versions of Python is unintended use of python_requires and
+  actively discouraged.",1,1
+15585909,Quentin Pradet,quentin.pradet@gmail.com,2023-01-21 16:44:33,Support missing SNIMissingWarning in tests (#6336),14,5
+46188256,Boris Verkhovskiy,boris.verk@gmail.com,2023-02-27 23:31:15,Response.raw.read() returns bytes (#6365),2,2
+ec78348c,Nate Prewitt,nate.prewitt@gmail.com,2023-03-03 12:45:27,Upgrade lint.yml action (#6370),6,5
+e90852d2,Yifang Zhu,70597936+zhu-yifang@users.noreply.github.com,2023-03-03 13:32:49,Make json doc strings consistent (#6368),3,3
+7f694b79,Seth Michael Larson,sethmichaellarson@gmail.com,2023-03-04 04:39:02,Allow str/bytes subclasses to be used as header parts,48,13
+26bea1e4,Levi,shadycuz@gmail.com,2023-04-23 07:32:51,"Use urllib3 native chunking ability (#6226)
+
+* Fix #3844 
+* Use urllib for chunked 
+
+---------
+
+Co-authored-by: James Pickering <james.pickering@xml-solutions.com>
+Co-authored-by: Leon Verrall <LVerrall@slb.com>",13,58
+dfc3e243,Thomas Grainger,tagrain@gmail.com,2023-04-23 07:41:27,"pin cryptography<40 on pypy 3.7 (#6421)
+
+* pin cryptography<40 on pypy 3.7",1,0
+a7da1ab3,Thomas Grainger,tagrain@gmail.com,2023-04-23 07:53:09,try on ubuntu 22.04 (#6418),1,1
+51716c4e,Thomas Grainger,tagrain@gmail.com,2023-04-23 08:00:22,enable the warnings plugin (#6416),1,1
+87d63de8,Nate Prewitt,nate.prewitt@gmail.com,2023-04-26 23:19:11,v2.29.0,10,2
+f2629e9e,Quentin Pradet,quentin.pradet@gmail.com,2023-04-29 03:17:10,Remove strict parameter (#6434),0,1
+2ad18e0e,Nate Prewitt,nate.prewitt@gmail.com,2023-05-03 23:39:44,v2.30.0,19,7
+d3d50443,Syed Saifullah,39564496+syed-saif@users.noreply.github.com,2023-05-10 00:55:33,Fixed a small typo (#6452),1,1
+b639e66c,Thomas Grainger,tagrain@gmail.com,2023-05-13 22:10:56,"test on py3.12 (#6448)
+
+* test on py3.12
+
+* update to pytest-httpbin==2.0.0",3,3
+30222533,Thomas Grainger,tagrain@gmail.com,2023-05-15 23:04:21,test on pypy 3.8 and pypy 3.9 on windows and macos (#6424),3,4
+74ea7cf7,Nate Prewitt,nate.prewitt@gmail.com,2023-05-22 23:08:57,Merge pull request from GHSA-j8r2-6x86-q33q,23,1
+147c8511,Nate Prewitt,nate.prewitt@gmail.com,2023-05-22 23:10:32,v2.31.0,29,2
+6e5b15d5,Nate Prewitt,nate.prewitt@gmail.com,2023-05-22 23:36:22,Fix linting issues,10,9
+22db55a8,Boris Verkhovskiy,boris.verk@gmail.com,2023-06-27 01:09:23,Fix doc typo (#6467),1,1
+cdbc2e27,Matthew Armand,marmand68@gmail.com,2023-07-04 04:38:22,"Add an Example for automatic retries to the Advanced Usage docs (#6258)
+
+- While Requests doesn't automatically retry failures, this ability is a very common advanced use case in real world applications.
+- Although there's a mention of this ability on the HTTPAdapter class docs, it's a bit buried and not very specific.
+- It makes sense then to have an Example in the HTTPAdapter section of the Advanced Usage docs with a basic template for how this can be accomplished with Requests.",22,0
+fecf3dc4,cpzt,chenpan9012@gmail.com,2023-07-30 09:01:42,add docstring parameter `hooks` (#6456),2,0
+2ecdb685,Alexandre Erwin Ittner,alexandre@ittner.com.br,2023-07-30 09:50:43,"Update reference to ""cookielib"" to ""cookiejar"" in documentation (#6214)",8,8
+dfe46c1b,Kevin Kirsche,kevin.kirsche@one.verizon.com,2023-07-30 09:55:18,refactor: prefer dictionary comphrension to loop (#6187),1,5
+aa4cc786,Calle Svensson,calle.svensson@zeta-two.com,2023-07-30 12:05:44,Add note about adapter prefix match to docs (#6465),4,0
+cb7fcd7e,Joren Vrancken,jorenvrancken@gmail.com,2023-08-13 01:53:36,Specify that Session.headers needs to be set to a OrderedDict in Header Ordering docs (#6475),1,1
+9b6c62e2,Nate Prewitt,nate.prewitt@gmail.com,2023-08-13 02:37:15,Merge branch 'main' into spdx-conform-license,242,125
+34a64bc6,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-08-13 02:51:42,"Merge pull request #6266 from elprimato/spdx-conform-license
+
+Change to SPDX conform license string",1,1
+2c193bda,Nate Prewitt,nate.prewitt@gmail.com,2023-08-13 03:02:58,Pin GHA workflows and add dependabot to keep them up to date (#6497),21,10
+8112fcc7,Nate Prewitt,nate.prewitt@gmail.com,2023-08-13 03:03:10,Pre commit update (#6498),9,29
+ea49261a,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-08-13 03:03:17,"Bump dessant/lock-threads from 3.0.0 to 4.0.1
+
+Bumps [dessant/lock-threads](https://github.com/dessant/lock-threads) from 3.0.0 to 4.0.1.
+- [Release notes](https://github.com/dessant/lock-threads/releases)
+- [Changelog](https://github.com/dessant/lock-threads/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/dessant/lock-threads/compare/e460dfeb36e731f3aeb214be6b0c9a9d9a67eda6...be8aa5be94131386884a6da4189effda9b14aa21)
+
+---
+updated-dependencies:
+- dependency-name: dessant/lock-threads
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",1,1
+c7933453,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-08-13 03:03:22,"Bump actions/setup-python from 2.3.4 to 4.7.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 2.3.4 to 4.7.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/v2.3.4...61a6322f88396a6271a6ee3565807d608ecaddd1)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",1,1
+9acca90b,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-08-13 03:03:30,"Bump github/codeql-action from 1.1.39 to 2.21.3
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 1.1.39 to 2.21.3.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/231aa2c8a89117b126725a0e11897209b7118144...5b6282e01c62d02e720b81eb8a51204f527c3624)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+6ad49365,Nate Prewitt,nate.prewitt@gmail.com,2023-08-13 03:24:59,"Merge pull request #6499 from psf/dependabot/github_actions/dessant/lock-threads-4.0.1
+
+Bump dessant/lock-threads from 3.0.0 to 4.0.1",1,1
+09a241f5,Nate Prewitt,nate.prewitt@gmail.com,2023-08-13 03:36:48,"Merge pull request #6500 from psf/dependabot/github_actions/actions/setup-python-4.7.0
+
+Bump actions/setup-python from 2.3.4 to 4.7.0",1,1
+4bd06cd3,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-08-13 03:37:22,"Bump actions/checkout from 2.7.0 to 3.5.3
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2.7.0 to 3.5.3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2.7.0...c85c95e3d7251135ab7dc9ce3241c5835cc595a9)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",2,2
+9ff1a25e,Nate Prewitt,nate.prewitt@gmail.com,2023-08-13 03:50:52,"Merge pull request #6502 from psf/dependabot/github_actions/github/codeql-action-2.21.3
+
+Bump github/codeql-action from 1.1.39 to 2.21.3",3,3
+d8152769,Nate Prewitt,nate.prewitt@gmail.com,2023-08-13 04:15:39,Merge pull request #6501 from psf/dependabot/github_actions/actions/checkout-3.5.3,2,2
+678fca84,Nate Prewitt,nate.prewitt@gmail.com,2023-08-14 00:56:53,Upgrade to httpbin 0.10.0 (#6496),2,5
+e9fa2e2d,Nate Prewitt,nate.prewitt@gmail.com,2023-08-14 03:56:18,Add 3.12 classifier and tox configuration (#6503),2,1
+d63e94f5,Nate Prewitt,nate.prewitt@gmail.com,2023-08-14 05:46:13,Move to src directory (#6506),5437,5440
+005571d1,Nate Prewitt,nate.prewitt@gmail.com,2023-08-14 07:08:21,Remove pytest-mock requirement (#6505),28,27
+89f0eb91,Jonas Schell,jonas@livekit.io,2023-08-16 23:16:53,fix monthly download badge (#6507),1,1
+2ee5b0b0,13steinj,13steinj@users.noreply.github.com,2023-08-19 01:01:26,Fix documentation monthly download badge (#6508),1,1
+bea231b0,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-08-29 00:12:37,"Bump actions/checkout from 3.5.3 to 3.6.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3.5.3 to 3.6.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/c85c95e3d7251135ab7dc9ce3241c5835cc595a9...f43a0e5ff2bd294095638e18286ca9a3d1956744)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+16dc70df,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-08-29 03:05:56,"Merge pull request #6516 from psf/dependabot/github_actions/actions/checkout-3.6.0
+
+Bump actions/checkout from 3.5.3 to 3.6.0",3,3
+4585a7fb,Johnny.H,jnhyperion@gmail.com,2023-08-29 13:41:49,remove pytest.ini since it does not exist anymore,1,1
+8b560ecb,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-08-29 22:27:10,"Merge pull request #6517 from jnhyperion/remove-pytest-ini
+
+Remove pytest.ini in MANIFEST.in since it does not exist anymore",1,1
+29fc8d1e,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-09-05 00:21:27,"Bump actions/checkout from 3.6.0 to 4.0.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 3.6.0 to 4.0.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/f43a0e5ff2bd294095638e18286ca9a3d1956744...3df4ab11eba7bda6032a0b82a6bb43b11571feac)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+88128125,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-09-05 08:17:08,"Merge pull request #6519 from psf/dependabot/github_actions/actions/checkout-4.0.0
+
+Bump actions/checkout from 3.6.0 to 4.0.0",3,3
+6c8d9b1d,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-09-13 22:33:58,"Autoclose specific issue templates
+
+We spend a fair amount of time closing issues because people don't read
+the template closely or understand what they're being told. Let's take
+advantage of being able to auto-label an issue based on the template and
+then trigger a workflow to auto-magically close the issue with a message
+and lock the issue.",41,0
+12862617,anupam-arista,118899211+anupam-arista@users.noreply.github.com,2023-09-14 16:59:37,Update models.Response.json docstring clearer,1,1
+a775435c,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-09-26 00:28:35,"Bump actions/checkout from 4.0.0 to 4.1.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.0.0 to 4.1.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/3df4ab11eba7bda6032a0b82a6bb43b11571feac...8ade135a41bc03ea155e62e844d188df1ea18608)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+ee93fac6,Nate Prewitt,nate.prewitt@gmail.com,2023-09-26 02:30:05,"Merge pull request #6538 from psf/dependabot/github_actions/actions/checkout-4.1.0
+
+Bump actions/checkout from 4.0.0 to 4.1.0",3,3
+f5a7aefc,Nate Prewitt,nate.prewitt@gmail.com,2023-10-07 06:34:24,Fix urllib3 pin in setup.cfg (#6545),1,1
+42a3b5cc,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-10-10 00:29:55,"Bump github/codeql-action from 2.21.3 to 2.22.1
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 2.21.3 to 2.22.1.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/5b6282e01c62d02e720b81eb8a51204f527c3624...fdcae64e1484d349b3366718cdfef3d404390e85)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+8199a2b3,Nate Prewitt,nate.prewitt@gmail.com,2023-10-10 00:49:28,"Merge pull request #6548 from psf/dependabot/github_actions/github/codeql-action-2.22.1
+
+Bump github/codeql-action from 2.21.3 to 2.22.1",3,3
+f75b9504,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-10-11 21:19:14,"Update close comment
+
+Co-authored-by: Nate Prewitt <nate.prewitt@gmail.com>",1,1
+81877686,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-10-11 21:19:57,"Update close-issues.yml
+
+Remove references to GITHUB_TOKEN/MY_TOKEN",0,2
+b55bb15c,Nate Prewitt,nate.prewitt@gmail.com,2023-10-12 00:29:20,"Merge pull request #6527 from sigmavirus24/update-templates
+
+Autoclose specific issue templates",39,0
+a8e9c1b4,sumedhrao7,sumedhrao7@gmail.com,2023-10-18 10:10:50,added assert statements into tests/test_requests/test_header_validation in regards to the issue #6551,1,1
+839a8ede,Nate Prewitt,nate.prewitt@gmail.com,2023-10-18 14:08:52,"Merge pull request #6552 from swims-hjkl/issue/test_header_validation
+
+#6551  - assert statements for test test_header_validation",1,1
+ad761abc,mayank,amkarn258@gmail.com,2023-10-31 03:20:10,every chardet package maps to requests.packages.chardet.* package respectively,2,3
+e9b1217c,mayank,amkarn258@gmail.com,2023-10-31 23:07:59,added handling for chardet and charset_normalizer imports,2,0
+d7490c9d,amkarn258,55189266+amkarn258@users.noreply.github.com,2023-11-01 01:06:39,"Update src/requests/packages.py
+
+Co-authored-by: Ian Stapleton Cordasco <graffatcolmingov@gmail.com>",4,3
+89cde235,mayank,amkarn258@gmail.com,2023-11-05 01:50:21,checkstyle,1,1
+c32b0462,Matthew Carruth,carruthm@gmail.com,2023-11-16 09:00:28,Fix missing space in error message,1,1
+9e98a874,Nate Prewitt,nate.prewitt@gmail.com,2023-11-16 15:44:49,Merge pull request #6574 from msea1/matthew/fix_space,1,1
+e66a07b2,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-11-21 00:28:17,"Bump dessant/lock-threads from 4.0.1 to 5.0.0
+
+Bumps [dessant/lock-threads](https://github.com/dessant/lock-threads) from 4.0.1 to 5.0.0.
+- [Release notes](https://github.com/dessant/lock-threads/releases)
+- [Changelog](https://github.com/dessant/lock-threads/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/dessant/lock-threads/compare/be8aa5be94131386884a6da4189effda9b14aa21...d42e5f49803f3c4e14ffee0378e31481265dda22)
+
+---
+updated-dependencies:
+- dependency-name: dessant/lock-threads
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",1,1
+c6de5a14,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-11-21 00:37:07,"Merge pull request #6580 from psf/dependabot/github_actions/dessant/lock-threads-5.0.0
+
+Bump dessant/lock-threads from 4.0.1 to 5.0.0",1,1
+15849947,Elliot Ford,elliot.ford@astrazeneca.com,2023-11-22 19:34:04,fix docstring typo: a -> as,1,1
+0b4d4941,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-11-22 23:10:47,"Merge pull request #6581 from EFord36/typo-fix
+
+fix docstring typo: a -> as",1,1
+f6707042,Bruce Adams,bruce.adams@acm.org,2023-11-28 06:27:43,"Unit test for string containing multi-byte UTF-8
+
+There are two tests here. One demonstrating existing, correct
+behavior for `data=bytes`, and another, failing, test for the case
+where `data=string` and the string contains multi-byte UTF-8.",17,0
+b37878d3,Ata Tuzuner,atatuzuner61@gmail.com,2023-11-29 07:12:22,Too early definition added to 425 status code type,1,1
+889910c7,Ata Tuzuner,atatuzuner61@gmail.com,2023-11-30 01:24:15,Added tests for status code 425 definitions.,13,0
+ec84f2c5,Ata Tuzuner,atatuzuner61@gmail.com,2023-11-30 01:27:18,Fixes to test,2,0
+3fd309a5,Bruce Adams,bruce.adams@acm.org,2023-11-30 04:42:57,"Enhance `super_len` to count encoded bytes for str
+
+This fixes issue #6586",3,0
+d6ffd868,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-12-01 22:05:59,"Update close-issues.yml
+
+I noticed the auto-labeling was working but not the auto-closing. Looking at recent actions runs I see that we need to specify the token even if we're not giving our own special token. See https://github.com/psf/requests/actions/runs/7057701782/job/19211845073#step:2:13 for additional context, namely
+
+```
+ gh: To use GitHub CLI in a GitHub Actions workflow, set the GH_TOKEN environment variable. Example:
+  env:
+    GH_TOKEN: ${{ github.token }}
+```",2,0
+769bc3ae,Nate Prewitt,nate.prewitt@gmail.com,2023-12-02 01:18:02,"Merge pull request #6596 from psf/fix-autoclose-automtaion
+
+Update close-issues.yml",2,0
+ba67dc8d,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-12-12 00:07:15,"Bump actions/setup-python from 4.7.0 to 5.0.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 4.7.0 to 5.0.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/61a6322f88396a6271a6ee3565807d608ecaddd1...0a5c61591373683505ea898e09a3ea4f39ef2b9c)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",2,2
+a25fde69,Nate Prewitt,nate.prewitt@gmail.com,2023-12-12 00:11:07,Merge pull request #6599 from psf/dependabot/github_actions/actions/setup-python-5.0.0,2,2
+a64f32ba,Rodrigo Silva,github@rodrigosilva.com,2023-12-13 21:05:12,"Add note on connection timeout being larger than specified. Fix #5773
+
+On servers with multiple IPs, such as IPv4 and IPv6, `urllib3` tries each address sequentially until one successfully connects, using the specified timeout for _each_ attempt, leading to a total connection timeout that is a _multiple_ of the requested time.",8,0
+c7c2ebf1,Nicola Soranzo,nicola.soranzo@earlham.ac.uk,2023-12-16 04:59:56,"Add now mandatory readthedocs config file
+
+Docs builds currently fail with:
+
+```
+Problem in your project's configuration. No default configuration file found at repository's root. See https://docs.readthedocs.io/en/stable/config-file/
+```
+
+See e.g. https://readthedocs.org/projects/requests/builds/22842479/",28,0
+51d0d83e,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-12-16 21:24:37,"Merge pull request #6603 from nsoranzo/rtd_config
+
+Add now mandatory readthedocs config file",28,0
+951dd15f,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-12-16 21:26:23,"Update docs/user/advanced.rst
+
+fix indentation for note so it renders properly",6,6
+92f9e431,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-12-16 21:29:50,"Update docs/user/advanced.rst
+
+Add note about wall clock too",6,0
+1ddf014f,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-12-16 21:30:18,"Merge pull request #6600 from MestreLion/MestreLion-connection-timeout-note
+
+Add note on connection timeout being larger than specified. Fix #5773",14,0
+3b5978fc,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-12-17 04:24:02,"Merge pull request #6592 from atatuzuner61/bug/6584
+
+""TOO_EARLY"" type definition for status code 425",16,1
+1447bccc,Jaikish Pai,jkshpai@gmail.com,2023-12-18 05:34:30,fix for ##6604,11,11
+421b1f17,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2023-12-19 00:39:47,"Bump github/codeql-action from 2.22.1 to 3.22.11
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 2.22.1 to 3.22.11.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/fdcae64e1484d349b3366718cdfef3d404390e85...b374143c1149a9115d881581d29b8390bbcbb59c)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+e4c821a2,Nate Prewitt,nate.prewitt@gmail.com,2023-12-19 01:30:42,"Merge pull request #6607 from psf/dependabot/github_actions/github/codeql-action-3.22.11
+
+Bump github/codeql-action from 2.22.1 to 3.22.11",3,3
+1396eb6f,Nate Prewitt,nate.prewitt@gmail.com,2023-12-20 14:17:55,"Merge pull request #6605 from jaikishpai/fix-#6604
+
+fix for ##6604",11,11
+242d3113,Mike Fiedler,miketheman@gmail.com,2023-12-24 00:16:50,"docs: specify sphinx dirhtml builder
+
+With the requirement of a configuration file, the default builder
+of `dirhtml` that RTD used to use is no longer specified.
+This leads to URLs ending in `.html` now, which
+breaks other exisitng references.
+
+Refs: #6603
+Refs: https://docs.readthedocs.io/en/stable/config-file/v2.html#sphinx-builder
+Refs: https://www.sphinx-doc.org/en/master/usage/builders/index.html#sphinx.builders.dirhtml.DirectoryHTMLBuilder
+
+Signed-off-by: Mike Fiedler <miketheman@gmail.com>",1,0
+b5bd0f14,Mike Fiedler,miketheman@gmail.com,2023-12-24 01:17:34,"docs: add label to socks heading
+
+When trying to link via intersphinx, a label must be used.
+Otherwise a full URL is required, which is less desirable.
+
+Signed-off-by: Mike Fiedler <miketheman@gmail.com>",2,0
+f3f97844,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-12-24 01:24:56,"Merge pull request #6613 from miketheman/add-socks-label
+
+docs: add label to socks heading",2,0
+f23346a9,Mike Fiedler,miketheman@gmail.com,2023-12-24 01:36:34,"Revert ""Merge pull request #6605 from jaikishpai/fix-#6604""
+
+This reverts commit 1396eb6f7a1116d49f1f0df0ddf895343f84af64, reversing
+changes made to e4c821a24778c3a33beec2aa86f3d58e3d94b58c.",11,11
+bfba9dc6,Mike Fiedler,miketheman@gmail.com,2023-12-24 02:09:55,"docs: replace concrete URLs with references
+
+Any development links will now refer back to the generated docs.
+
+Signed-off-by: Mike Fiedler <miketheman@gmail.com>",15,13
+25939d87,Mike Fiedler,miketheman@gmail.com,2023-12-24 02:15:33,"add myself
+
+Signed-off-by: Mike Fiedler <miketheman@gmail.com>",1,0
+72eccc8d,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2023-12-24 02:33:48,"Merge pull request #6612 from miketheman/fix-docs-urls
+
+docs: specify sphinx dirhtml builder, use references instead of absolutes",17,13
+b0e6c9bf,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-01-09 01:01:37,"Bump github/codeql-action from 3.22.11 to 3.23.0
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.22.11 to 3.23.0.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/b374143c1149a9115d881581d29b8390bbcbb59c...e5f05b81d5b6ff8cfa111c80c22c5fd02a384118)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+96b22fa1,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-01-09 01:56:01,"Merge pull request #6619 from psf/dependabot/github_actions/github/codeql-action-3.23.0
+
+Bump github/codeql-action from 3.22.11 to 3.23.0",3,3
+3ff3ff21,Thomas Dehghani,thomas.dehghani@gmail.com,2024-02-01 00:13:53,"Fix #6628 - JSONDecodeError are not deserializable
+
+requests.exceptions.JSONDecodeError are not deserializable: calling
+`pickle.dumps` followed by `pickle.loads` will trigger an error.
+
+This is particularly a problem in a process pool, as an attempt to
+decode json on an invalid json document will result in the entire
+process pool crashing.
+
+This is due to the MRO of the `requests.exceptions.JSONDecodeError`
+class: the `__reduce__` method called when pickling an instance is not
+the one from the JSON library parent: two out of three args expected
+for instantiation will be dropped, and the instance can't be
+deserialised.
+
+By specifying in the class which parent `__reduce__` method should be
+called, the bug is fixed as all args are carried over in the resulting
+pickled bytes.",20,0
+a5a0e4b5,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-02-06 00:38:01,"Bump github/codeql-action from 3.23.0 to 3.24.0
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.23.0 to 3.24.0.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/e5f05b81d5b6ff8cfa111c80c22c5fd02a384118...e8893c57a1f3a2b659b6b55564fdfdbbd2982911)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+4f3f189d,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-02-06 10:54:26,"Merge pull request #6632 from psf/dependabot/github_actions/github/codeql-action-3.24.0
+
+Bump github/codeql-action from 3.23.0 to 3.24.0",3,3
+6106a63e,Nate Prewitt,nate.prewitt@gmail.com,2024-02-21 03:58:35,Cleanup defunct links from community docs page,1,13
+46c1a3d8,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-02-21 04:04:33,"Merge pull request #6640 from nateprewitt/community_docs_cleanup
+
+Cleanup defunct links from community docs page",1,13
+5fc10bf1,Nate Prewitt,nate.prewitt@gmail.com,2024-02-21 05:37:25,Fix httpbin pin for test suite,1,1
+28855fd4,Nate Prewitt,nate.prewitt@gmail.com,2024-02-21 05:58:26,"Update supported copies of PyPy
+
+Dropped support for pypy-3.7 and pypy-3.8 which are no longer maintained by upstream.
+Added support for pypy-3.10.",1,6
+8fa43023,Nate Prewitt,nate.prewitt@gmail.com,2024-02-21 07:04:38,Update Sphinx to work with latest readthedocs requirements,1,1
+9439fad0,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-02-21 07:32:57,"Merge pull request #6641 from nateprewitt/fix_ci
+
+Fix CI",3,8
+58cea7a7,Nate Prewitt,nate.prewitt@gmail.com,2024-02-21 07:37:46,Drop support for CPython 3.7,8,10
+7a13c041,Nate Prewitt,nate.prewitt@gmail.com,2024-02-21 07:44:43,"Merge pull request #6642 from nateprewitt/drop_python_37
+
+Drop support for CPython 3.7",8,10
+382fc2c0,Nate Prewitt,nate.prewitt@gmail.com,2024-02-23 04:27:37,"Merge pull request #6629 from Tarty/fix-6628-jsondecode-error-not-deserializable
+
+Fix #6628 - JSONDecodeError are not deserializable",20,0
+60389df6,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-02-23 08:36:44,"Trim excess leading path separators
+
+A URL with excess leading / (path-separator)s would cause urllib3 to
+attempt to reparse the request-uri as a full URI with a host and port.
+This bypasses that logic in ConnectionPool.urlopen by replacing these
+leading /s with just a single /.
+
+Closes #6643",11,0
+3587a5f8,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-02-23 08:49:42,"Merge pull request #6644 from sigmavirus24/bug/6643
+
+Trim excess leading path separators",11,0
+b8be93a7,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-02-23 08:53:25,"Merge pull request #6589 from bruceadams/super_len_str_utf-8
+
+Enhance `super_len` to count encoded bytes for str",20,0
+0ec2780c,Elliot Ford,elliot.ford@astrazeneca.com,2024-02-23 18:25:50,update broken github pagination link,1,1
+d3b3399e,Elliot Ford,elliot.ford@astrazeneca.com,2024-02-23 18:25:50,"update authors github link
+
+Update account link for original author which has changed.",1,1
+a0e79bad,Elliot Ford,elliot.ford@astrazeneca.com,2024-02-23 18:26:21,"update broken rfc link
+
+ietf seems appropriate here - it's used elsewhere in the requets docs in
+several places.",1,1
+5f1c3c22,Elliot Ford,elliot.ford@astrazeneca.com,2024-02-23 18:26:21,remove section with broken link to survey,0,3
+541aa80c,Elliot Ford,elliot.ford@astrazeneca.com,2024-02-23 18:26:21,update urllib3 docs link,1,1
+0a7f662a,Elliot Ford,elliot.ford@astrazeneca.com,2024-02-23 18:26:21,"Make example URL format a literal rather than an actual link
+
+The rendered docs 'auto-link' this, which might encourage users to click
+the link, even though it doesn't go anywhere.",1,1
+f3f2611d,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-02-23 19:30:46,"Merge pull request #6583 from EFord36/fix-broken-links
+
+Fix broken links in docs",5,8
+eea3bbf9,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-02-23 20:26:38,"Merge pull request #6562 from amkarn258/issue-6223
+
+every chardet package maps to requests.packages.chardet.* package respectively",4,2
+c0813a2d,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-03-07 01:28:13,"Use TLS settings in selecting connection pool
+
+Previously, if someone made a request with `verify=False` then made a
+request where they expected verification to be enabled to the same host,
+they would potentially reuse a connection where TLS had not been
+verified.
+
+This fixes that issue.",65,2
+a58d7f2f,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-03-11 19:21:59,"Merge pull request #6655 from sigmavirus24/fix-tls-floppy
+
+Use TLS settings in selecting connection pool",65,2
+a94e9b53,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-03-14 19:06:22,"Add local TLS server
+
+This also adds certificates for testing purposes and files to make it
+easy to generate/regenerate them.
+
+This also replaces an existing test of how we utilize our pool manager
+such that we don't connect to badssl.com
+
+Finally, this adds additional context parameters for our pool manager to
+account for mTLS certificates used by clients to authenticate to a
+server.",716,9
+eeafb6ab,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-03-14 19:25:24,"Merge pull request #6662 from sigmavirus24/fix-tls-floppy
+
+Add local TLS server",716,9
+1604e20f,flysee,birdsee@qq.com,2024-03-18 15:36:36,Fix the proxy_bypass_registry function all returning true in some cases.,2,0
+13d892bd,flysee,birdsee@qq.com,2024-03-18 22:33:17,Additional should_bypass_proxies function test cases,33,1
+8dd3b26b,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-03-19 05:38:16,"Merge pull request #6302 from flysee/main
+
+Fix the proxy_bypass_registry function all returning true in some cases.",34,0
+2daa7b52,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-04-02 01:00:20,"Bump actions/setup-python from 5.0.0 to 5.1.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 5.0.0 to 5.1.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/0a5c61591373683505ea898e09a3ea4f39ef2b9c...82c7e631bb3cdc910f68e0081d67478d79c6982d)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",2,2
+2a438c27,Nate Prewitt,nate.prewitt@gmail.com,2024-04-02 01:36:47,"Merge pull request #6677 from psf/dependabot/github_actions/actions/setup-python-5.1.0
+
+Bump actions/setup-python from 5.0.0 to 5.1.0",2,2
+e45b4289,Michiel W. Beijen,mb@x14.nl,2024-04-09 03:48:24,"Add rfc9110 HTTP status code names
+
+RFC 9110 _HTTP Semantics_ obsoletes some earlier RFCs which defined HTTP
+1.1. It adds some status codes that were previously only used for
+WebDAV to HTTP _proper_ after making the names somewhat more generic.
+
+See https://www.rfc-editor.org/rfc/rfc9110.html#name-changes-from-rfc-7231
+
+This commit adds the http status code names from that RFC.",4,4
+0790ea42,Nate Prewitt,nate.prewitt@gmail.com,2024-04-11 22:10:57,"Merge pull request #6680 from mbeijen/rfc9110
+
+Add rfc9110 HTTP status code names",4,4
+cc23d1c6,Lumir Balhar,lbalhar@redhat.com,2024-04-12 03:10:36,"Fix compatibility with pytest 8
+
+`pytest.warns(None)` has been deprecated in pytest 7.0.0
+and it's no longer working in pytest 8.
+
+Resolves: https://github.com/psf/requests/issues/6679",2,2
+31ebb810,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-04-12 03:49:35,"Merge pull request #6682 from frenzymadness/pytest8
+
+Fix compatibility with pytest 8",2,2
+60047ade,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-04-16 00:40:35,"Bump github/codeql-action from 3.24.0 to 3.25.0
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.24.0 to 3.25.0.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/e8893c57a1f3a2b659b6b55564fdfdbbd2982911...df5a14dc28094dc936e103b37d749c6628682b60)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+f1bb07d3,Nate Prewitt,nate.prewitt@gmail.com,2024-04-16 01:01:39,"Merge pull request #6687 from psf/dependabot/github_actions/github/codeql-action-3.25.0
+
+Bump github/codeql-action from 3.24.0 to 3.25.0",3,3
+2d5f5477,Nate Prewitt,nate.prewitt@gmail.com,2024-04-24 01:50:19,Pin 3.8 and 3.9 runners back to macos-13 (#6688),9,0
+bf24b7d8,franekmagiera,framagie@gmail.com,2024-05-13 04:08:24,Use an invalid URI that will not cause httpbin to throw 500,1,1
+d6dded3f,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-05-13 05:33:47,"Merge pull request #6700 from franekmagiera/update-redirect-to-invalid-uri-test
+
+Use an invalid URI that will not cause httpbin to throw 500",1,1
+555b870e,Nate Prewitt,nate.prewitt@gmail.com,2024-05-15 06:26:04,Allow character detection dependencies to be optional in post-packaging steps,60,23
+0c030f78,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-05-15 08:15:19,"Merge pull request #6702 from nateprewitt/no_char_detection
+
+Allow optional char detection dependencies in post-packaging",60,23
+9a40d127,agubelu,agubelu@users.noreply.github.com,2024-05-16 04:07:26,Avoid reloading root certificates to improve concurrent performance (#6667),28,18
+d6ebc4a2,Nate Prewitt,nate.prewitt@gmail.com,2024-05-20 23:46:49,v2.32.0,48,2
+970e8cec,Nate Prewitt,nate.prewitt@gmail.com,2024-05-21 06:02:29,v2.32.1,10,2
+aa1461b6,Nate Prewitt,nate.prewitt@gmail.com,2024-05-21 20:42:49,Move _get_connection to get_connection_with_tls_context,21,6
+92075b33,Nate Prewitt,nate.prewitt@gmail.com,2024-05-22 00:28:30,Add deprecation warning,10,0
+c98e4d13,Nate Prewitt,nate.prewitt@gmail.com,2024-05-22 00:41:18,"Merge pull request #6710 from nateprewitt/api_rename
+
+Move _get_connection to get_connection_with_tls_context",31,6
+88dce9d8,Nate Prewitt,nate.prewitt@gmail.com,2024-05-22 02:49:22,v2.32.2,16,2
+a62a2d35,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-05-22 19:53:24,"Allow for overriding of specific pool key params
+
+This re-enables the use case of providing a custom SSLContext via a
+Transport Adapter as broken in #6655 and reported in #6715
+
+Closes #6715",76,9
+2e145223,Nate Prewitt,nate.prewitt@gmail.com,2024-05-24 02:51:07,Start testing on 3.13 beta,1,1
+6badbac6,Nate Prewitt,nate.prewitt@gmail.com,2024-05-25 02:38:06,Update HISTORY.md,2,2
+b1d73ddb,Nate Prewitt,nate.prewitt@gmail.com,2024-05-25 02:38:10,Don't use default SSLContext with custom poolmanager kwargs,6,2
+145b5399,Nate Prewitt,nate.prewitt@gmail.com,2024-05-25 05:37:06,Merge pull request #6716 from sigmavirus24/bug/6715,81,10
+e1887993,Nate Prewitt,nate.prewitt@gmail.com,2024-05-29 23:23:39,Don't create default SSLContext if ssl module isn't present (#6724),19,5
+0e322af8,Nate Prewitt,nate.prewitt@gmail.com,2024-05-29 23:36:10,v2.32.3,6,4
+06d2a384,anupam-arista,118899211+anupam-arista@users.noreply.github.com,2024-07-01 13:16:41,Merge branch 'psf:main' into patch-1,1288,113
+f8aa36b9,Nate Prewitt,nate.prewitt@gmail.com,2024-07-02 09:08:04,Test on urllib3 1.26.x,20,0
+4e383642,Nate Prewitt,nate.prewitt@gmail.com,2024-07-19 01:20:38,Add conditional string encoding based on urllib3 major version,40,18
+01353d3b,Nate Prewitt,nate.prewitt@gmail.com,2024-07-23 19:28:03,Invert major version check,7,7
+15e1f17b,Branch Vincent,branchevincent@gmail.com,2024-07-29 21:49:17,remove setuptools test command,0,26
+79b74ef7,Nate Prewitt,nate.prewitt@gmail.com,2024-07-30 09:44:13,Merge pull request #6757 from nateprewitt/urllib-1.x-tests,60,18
+877892e6,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-08-13 00:23:16,"Bump github/codeql-action from 3.25.0 to 3.26.0
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.25.0 to 3.26.0.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/df5a14dc28094dc936e103b37d749c6628682b60...eb055d739abdc2e8de2e5f4ba1a8b246daa779aa)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+a3ce6f00,Nate Prewitt,nate.prewitt@gmail.com,2024-08-13 00:54:11,"Merge pull request #6787 from psf/dependabot/github_actions/github/codeql-action-3.26.0
+
+Bump github/codeql-action from 3.25.0 to 3.26.0",3,3
+173890a4,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-09-03 00:56:26,"Bump actions/setup-python from 5.1.0 to 5.2.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 5.1.0 to 5.2.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/82c7e631bb3cdc910f68e0081d67478d79c6982d...f677139bbe7f9c59b41e40162b753c062f5d49a3)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",4,4
+f12ccbef,Nate Prewitt,nate.prewitt@gmail.com,2024-09-03 01:37:44,Merge pull request #6797 from psf/dependabot/github_actions/actions/setup-python-5.2.0,4,4
+0f5ef1be,Thomas Grainger,tagrain@gmail.com,2024-09-18 22:03:08,Merge branch 'main' of github.com:psf/requests into 3.13,169,66
+83e67c44,Thomas Grainger,tagrain@gmail.com,2024-09-18 22:04:08,use allow-prereleases: true instead of 3.13-dev,2,1
+92f10cec,Thomas Grainger,tagrain@gmail.com,2024-09-18 22:04:53,upgrade to pytest-httpbin 2.1.0rc1,2,2
+314e7c9c,Thomas Grainger,tagrain@gmail.com,2024-09-18 23:36:43,upgrade to pytest-httpbin 2.1.0 final,2,2
+f519bbae,Thomas Grainger,tagrain@gmail.com,2024-09-19 02:14:19,add trove classifier for 3.13,1,0
+5984296b,Thomas Grainger,tagrain@gmail.com,2024-09-19 02:40:02,Update tox.ini,1,1
+1ae6fc31,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-09-19 19:19:03,"Merge pull request #6802 from graingert/3.13
+
+start testing on 3.13rc",6,4
+0bff2d94,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-10-01 00:34:20,"Bump actions/checkout from 4.1.0 to 4.2.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.1.0 to 4.2.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/8ade135a41bc03ea155e62e844d188df1ea18608...d632683dd7b4114ad314bca15554477dd762a938)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",5,5
+7335bbf4,Nate Prewitt,nate.prewitt@gmail.com,2024-10-01 01:32:21,"Merge pull request #6803 from psf/dependabot/github_actions/actions/checkout-4.2.0
+
+Bump actions/checkout from 4.1.0 to 4.2.0",5,5
+26664fa5,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-10-29 00:05:11,"Bump actions/setup-python from 5.2.0 to 5.3.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 5.2.0 to 5.3.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/f677139bbe7f9c59b41e40162b753c062f5d49a3...0b93645e9fea7318ecaed2b359559ac225c90a2b)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",4,4
+9787d0c0,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2024-10-29 00:05:20,"Bump github/codeql-action from 3.26.0 to 3.27.0
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.26.0 to 3.27.0.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/eb055d739abdc2e8de2e5f4ba1a8b246daa779aa...662472033e021d55d94146f66f6058822b0b39fd)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+1f16cffa,Nate Prewitt,nate.prewitt@gmail.com,2024-10-29 00:24:12,"Merge pull request #6818 from psf/dependabot/github_actions/github/codeql-action-3.27.0
+
+Bump github/codeql-action from 3.26.0 to 3.27.0",3,3
+ed0b1b58,Nate Prewitt,nate.prewitt@gmail.com,2024-10-29 00:24:23,"Merge pull request #6817 from psf/dependabot/github_actions/actions/setup-python-5.3.0
+
+Bump actions/setup-python from 5.2.0 to 5.3.0",4,4
+a6cf27a7,Nate Prewitt,nate.prewitt@gmail.com,2024-11-03 04:13:02,"Update vulnerability disclosure process (#6820)
+
+* Update contact point for Vulnerability disclosures
+
+* Fix RedHat Contact
+
+* Point vulnerabilities.rst to our .SECURITY file",6,120
+ad959acf,Nate Prewitt,nate.prewitt@gmail.com,2024-11-10 13:50:30,Remove old macOS runners,0,9
+23540c93,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2024-11-11 00:18:36,"Merge pull request #6824 from psf/nateprewitt-patch-1
+
+Remove old macOS runners",0,9
+b653d80d,anupam-arista,118899211+anupam-arista@users.noreply.github.com,2024-12-13 07:38:45,Merge branch 'psf:main' into patch-1,82,187
+8c36da65,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-01-28 00:56:12,"Bump github/codeql-action from 3.27.0 to 3.28.5
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.27.0 to 3.28.5.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/662472033e021d55d94146f66f6058822b0b39fd...f6091c0113d1dcf9b98e269ee48e8a7e51b7bdd4)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+fe0583ba,Nate Prewitt,nate.prewitt@gmail.com,2025-01-28 01:39:35,"Merge pull request #6875 from psf/dependabot/github_actions/github/codeql-action-3.28.5
+
+Bump github/codeql-action from 3.27.0 to 3.28.5",3,3
+e361622f,jakobheine,me@jakobheine.de,2025-02-02 03:42:06,"docs(exceptions): Remove unused exception URLRequired from documentation
+
+The documentation previously listed `requests.URLRequired` as a valid
+exception, suggesting it would be raised for invalid URLs. However,
+this exception has been dead code since commit ab27027 (2012) and is
+never actually raised.
+
+Instead, invalid URLs raise `MissingSchema`, `InvalidSchema`, or
+`InvalidURL`, none of which were documented. This commit removes
+`URLRequired` from the documentation to reflect the actual behavior
+and prevent confusion.
+
+Signed-off-by: jakobheine <me@jakobheine.de>",0,1
+11f63a33,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-02-04 00:27:40,"Bump actions/setup-python from 5.3.0 to 5.4.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 5.3.0 to 5.4.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/0b93645e9fea7318ecaed2b359559ac225c90a2b...42375524e23c412d93fb67b49958b491fce71c38)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",4,4
+f2a6ae5e,Nate Prewitt,nate.prewitt@gmail.com,2025-02-04 00:58:57,"Merge pull request #6883 from psf/dependabot/github_actions/actions/setup-python-5.4.0
+
+Bump actions/setup-python from 5.3.0 to 5.4.0",4,4
+f761e74a,Nate Prewitt,nate.prewitt@gmail.com,2025-02-11 05:13:26,"Merge pull request #6880 from jakobheine/td/remove-urlrequired-from-docs
+
+docs(exceptions): Remove unused exception URLRequired from documentation",0,1
+b25f2b5e,anupam-arista,118899211+anupam-arista@users.noreply.github.com,2025-02-11 10:19:26,Merge branch 'psf:main' into patch-1,7,8
+d96f9982,anupam-arista,118899211+anupam-arista@users.noreply.github.com,2025-02-11 23:55:29,"Update src/requests/models.py
+
+Co-authored-by: Ian Stapleton Cordasco <graffatcolmingov@gmail.com>",3,1
+a2fd25ff,anupam-arista,118899211+anupam-arista@users.noreply.github.com,2025-02-11 23:58:59,Update models.py,1,2
+5d31ddbf,anupam-arista,118899211+anupam-arista@users.noreply.github.com,2025-02-12 20:28:07,"Update src/requests/models.py
+
+Co-authored-by: Ian Stapleton Cordasco <graffatcolmingov@gmail.com>",1,0
+1b7c37ef,Nate Prewitt,nate.prewitt@gmail.com,2025-02-14 00:49:49,Merge pull request #6529 from anupam-arista/patch-1,3,1
+50740966,Colin Watson,cjwatson@debian.org,2025-02-17 08:39:07,"Add CA constraint to test CA
+
+Otherwise recent versions of OpenSSL reject it as an invalid CA
+certificate (at least once the test certificates are regenerated).
+
+Fixes: #6896",4,0
+9ebebdef,Colin Watson,cjwatson@debian.org,2025-02-17 08:41:30,"Regenerate test certificates
+
+Created using the following command with OpenSSL 3.4.0:
+
+    for cert in expired mtls valid/server; do
+        make -C tests/certs/$cert clean all
+    done",279,272
+8ba805fa,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2025-02-17 20:40:19,"Merge pull request #6897 from cjwatson/fix-test-certificates
+
+Add CA constraint to test CA",283,272
+e946665c,duzhuoshanwai,65448395+duzhuoshanwai@users.noreply.github.com,2025-02-19 10:05:28,"Update advanced.rst
+
+Add quotes to prevent Zsh wildcard interpretation.",1,1
+1764cc93,Nate Prewitt,nate.prewitt@gmail.com,2025-02-21 02:43:13,"Merge pull request #6899 from duzhuoshanwai/main
+
+Docs: Add quotes to prevent Zsh wildcard interpretation.",1,1
+2019450b,Richard van den Berg,richard@vdberg.org,2025-03-29 21:53:45,Add key usage extension to test ca.crt,11,10
+a5cb4284,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-04-01 00:31:10,"Bump actions/setup-python from 5.4.0 to 5.5.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 5.4.0 to 5.5.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/42375524e23c412d93fb67b49958b491fce71c38...8d9ed9ac5c53483de85588cdf95a591a75ab9f55)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",4,4
+c4c8e202,Nate Prewitt,nate.prewitt@gmail.com,2025-04-01 00:43:07,"Merge pull request #6925 from psf/dependabot/github_actions/actions/setup-python-5.5.0
+
+Bump actions/setup-python from 5.4.0 to 5.5.0",4,4
+42a1dd64,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2025-04-16 10:46:50,"Merge pull request #6924 from RichieB2B/rfc5280
+
+Add key usage extension to test ca.crt",11,10
+4ce9520a,Robin,167366979+allrob23@users.noreply.github.com,2025-04-23 20:44:05,"Update lint workflow to ubuntu-24.04
+
+Ubuntu 20.04 was the old default and is no longer supported by GitHub Actions",1,1
+991f05dc,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-04-29 01:28:05,"Bump actions/setup-python from 5.5.0 to 5.6.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 5.5.0 to 5.6.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/8d9ed9ac5c53483de85588cdf95a591a75ab9f55...a26af69be951a213d495a4c3e4e4022e16d87065)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-version: 5.6.0
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",4,4
+c54d0347,Nate Prewitt,nate.prewitt@gmail.com,2025-04-29 01:36:20,Merge pull request #6939 from psf/dependabot/github_actions/actions/setup-python-5.6.0,4,4
+579cd9f2,Nate Prewitt,nate.prewitt@gmail.com,2025-05-02 10:54:57,Drop pypy 3.9 and add pypy 3.11 support,10,1
+c65c7808,Robin,167366979+allrob23@users.noreply.github.com,2025-05-04 00:39:14,"Add two more tests exercising the adapter (#6936)
+
+Closes #6935",26,0
+c799b816,Tim Sweña (Swast),tswast@gmail.com,2025-05-22 00:08:05,docs: fix dead links to kenreitz.org,3,3
+a7e1c745,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2025-06-01 00:59:51,"Update docs/conf.py
+
+Co-authored-by: Nate Prewitt <nate.prewitt@gmail.com>",1,1
+6716d7c9,Tim Sweña,swast@google.com,2025-06-01 22:03:51,remove links,12,17
+7341690e,Nate Prewitt,nate.prewitt@gmail.com,2025-06-02 02:07:17,Merge pull request #6951 from tswast/patch-1,13,18
+96ba401c,Nate Prewitt,nate.prewitt@gmail.com,2025-06-04 23:39:25,Only use hostname to do netrc lookup instead of netloc,1,7
+7bc45877,danigm,daniel.garcia@suse.com,2025-06-05 19:21:46,"Add new test to check netrc auth leak (#6962)
+
+This patch adds a new test that reproduces the security issue reported
+here:
+https://seclists.org/oss-sec/2025/q2/204
+
+Doing a request to a malicious url with a prefix like ""domain.com:@""
+will use the ""domain.com"" netrc credentials in the request to other
+domain.",31,0
+5b4b64c3,Arthur Woimbée,arthur.woimbee@gmail.com,2025-06-05 22:55:33,"Add more tests to prevent regression of CVE 2024 47081
+
+Remove workaround not needed since py38 for os.path.expanduser.",20,8
+59f8aa2a,Piotr Szlazak,11884243+pszlazak@users.noreply.github.com,2025-06-09 01:47:55,Add netrc file search information to authentication documentation (#6876),11,0
+021dc729,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2025-06-10 00:39:48,Polish up release tooling for last manual release,7,4
+821770e8,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2025-06-10 00:39:48,Bump version and add release notes for v2.32.4,13,2
+e57b5bf0,Ian Stapleton Cordasco,graffatcolmingov@gmail.com,2025-06-10 10:32:45,"Add Trusted Publishing Release Workflow
+
+Rather than rely on manual releases from a developer laptop, let's use
+tag pushes to trigger a workflow to publish artifacts to PyPI. This will
+leverage trusted publishing and upload attestations as well.",90,1
+3f07f990,Jonas Fonseca,jonas.fonseca@gmail.com,2025-06-10 10:54:25,Fix typo in documentation for verify,1,1
+8ff173b1,AHMAD FAIZ,40581230+anodo123@users.noreply.github.com,2025-06-10 20:40:33,"Clarify error description in cloning instructions
+
+This clarifies the error description in the 'Cloning the repository' section of the README. The current wording mentions 'an error about a bad commit', which is somewhat vague. I've updated it to 'an error about a bad commit timestamp', which more accurately describes the nature of the error referenced in issue #2690.
+This small change improves the clarity of the documentation, helping users better understand the potential issue they might encounter when cloning the repository and why they need to use the specified Git flag.",1,1
+90fee087,Nate Prewitt,nate.prewitt@gmail.com,2025-06-14 00:42:08,Revert caching a default SSLContext (#6767),16,39
+91a3eabd,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-06-17 03:10:36,"Bump github/codeql-action from 3.28.5 to 3.29.0
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.28.5 to 3.29.0.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/f6091c0113d1dcf9b98e269ee48e8a7e51b7bdd4...ce28f5bb42b7a9f2c824e633a3f6ee835bab6858)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-version: 3.29.0
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+d58d8aa2,Quaylyn Rimer,31830590+killerdevildog@users.noreply.github.com,2025-07-18 10:09:19,docs: clarify timeout parameter uses seconds in Session.request (#6994),1,1
+fec96cd5,Abhishek Jha,abhi_jha1995@rediffmail.com,2025-07-19 00:24:31,Update Makefile rules (#6996),2,5
+2edca111,Nate Prewitt,nate.prewitt@gmail.com,2025-07-26 04:42:15,"Add support for Python 3.14 and drop support for Python 3.8 (#6993)
+
+* Add testing for Python 3.14 preview build
+
+* Add trove classifier for Python 3.14
+
+* Remove support for Python 3.8",19,14
+7618dbef,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-07-29 03:01:25,"Bump step-security/harden-runner from 2.12.0 to 2.13.0
+
+Bumps [step-security/harden-runner](https://github.com/step-security/harden-runner) from 2.12.0 to 2.13.0.
+- [Release notes](https://github.com/step-security/harden-runner/releases)
+- [Commits](https://github.com/step-security/harden-runner/compare/0634a2670c59f64b4a01f0f96f84700a4088b9f0...ec9f2d5744a09debf3a187a3f4f675c53b671911)
+
+---
+updated-dependencies:
+- dependency-name: step-security/harden-runner
+  dependency-version: 2.13.0
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",2,2
+4b9c546a,Nate Prewitt,nate.prewitt@gmail.com,2025-07-29 03:09:42,"Merge pull request #6999 from psf/dependabot/github_actions/step-security/harden-runner-2.13.0
+
+Bump step-security/harden-runner from 2.12.0 to 2.13.0",2,2
+46e939b5,Grant Birkinbine,grant.birkinbine@gmail.com,2025-08-06 20:36:19,"Update publish workflow to use `artifact-id` instead of `name`
+
+Added artifact-id output to publish workflow and updated download-artifact action version to `v5.0.0`. Also hardens the workflow a bit by adding `persist-credentials: false` to the checkout step",6,2
+b336cb2b,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-08-12 06:15:22,"Bump actions/checkout from 4.2.0 to 5.0.0
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 4.2.0 to 5.0.0.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v4.2.0...08c6903cd8c0fde910a37f88322edcfb5dd907a8)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-version: 5.0.0
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",6,6
+131e5060,Nate Prewitt,nate.prewitt@gmail.com,2025-08-12 06:32:16,"Merge pull request #7010 from psf/dependabot/github_actions/actions/checkout-5.0.0
+
+Bump actions/checkout from 4.2.0 to 5.0.0",6,6
+b25c87d7,Nate Prewitt,nate.prewitt@gmail.com,2025-08-19 04:23:20,v2.32.5,12,2
+1c49660b,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-09-02 16:15:01,"Bump github/codeql-action from 3.29.0 to 3.30.0
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.29.0 to 3.30.0.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/ce28f5bb42b7a9f2c824e633a3f6ee835bab6858...2d92b76c45b91eb80fc44c74ce3fce0ee94e8f9d)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-version: 3.30.0
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+7d8df1df,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-09-09 00:18:37,"Bump pypa/gh-action-pypi-publish from 1.12.4 to 1.13.0
+
+Bumps [pypa/gh-action-pypi-publish](https://github.com/pypa/gh-action-pypi-publish) from 1.12.4 to 1.13.0.
+- [Release notes](https://github.com/pypa/gh-action-pypi-publish/releases)
+- [Commits](https://github.com/pypa/gh-action-pypi-publish/compare/76f52bc884231f62b9a034ebfe128415bbaabdfc...ed0c53931b1dc9bd32cbe73a98c7f6766f8a527e)
+
+---
+updated-dependencies:
+- dependency-name: pypa/gh-action-pypi-publish
+  dependency-version: 1.13.0
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",1,1
+5a270e2a,Nate Prewitt,nate.prewitt@gmail.com,2025-09-09 08:08:49,Merge pull request #7025 from psf/dependabot/github_actions/pypa/gh-action-pypi-publish-1.13.0,1,1
+3c8decb9,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-09-09 08:09:47,"Bump actions/setup-python from 5.6.0 to 6.0.0
+
+Bumps [actions/setup-python](https://github.com/actions/setup-python) from 5.6.0 to 6.0.0.
+- [Release notes](https://github.com/actions/setup-python/releases)
+- [Commits](https://github.com/actions/setup-python/compare/a26af69be951a213d495a4c3e4e4022e16d87065...e797f83bcb11b83ae66e0230d6156d7c80228e7c)
+
+---
+updated-dependencies:
+- dependency-name: actions/setup-python
+  dependency-version: 6.0.0
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",5,5
+420d16bc,Nate Prewitt,nate.prewitt@gmail.com,2025-09-09 17:00:19,Merge pull request #7026 from psf/dependabot/github_actions/actions/setup-python-6.0.0,5,5
+6e4134b2,dependabot[bot],49699333+dependabot[bot]@users.noreply.github.com,2025-10-14 00:16:05,"Bump github/codeql-action from 3.30.0 to 4.30.8
+
+Bumps [github/codeql-action](https://github.com/github/codeql-action) from 3.30.0 to 4.30.8.
+- [Release notes](https://github.com/github/codeql-action/releases)
+- [Changelog](https://github.com/github/codeql-action/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/github/codeql-action/compare/2d92b76c45b91eb80fc44c74ce3fce0ee94e8f9d...f443b600d91635bebf5b0d9ebc620189c0d6fba5)
+
+---
+updated-dependencies:
+- dependency-name: github/codeql-action
+  dependency-version: 4.30.8
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>",3,3
+70298332,Nate Prewitt,nate.prewitt@gmail.com,2025-10-15 19:45:42,Merge pull request #7042 from psf/dependabot/github_actions/github/codeql-action-4.30.8,3,3
