@@ -11,11 +11,12 @@
 
 ## 生成文件说明
 项目运行后将自动输出以下分析结果文件，可直接用于报告展示或二次分析：
-1.commit_history.csv：完整的提交历史原始数据，包含所有提取的核心字段；
-2.contributor_top10.png：Top10 贡献者提交次数可视化图表；
-3.commit_trend_W.png/commit_trend_M.png/commit_trend_ME.png：按周 / 月 / 自定义周期统计的提交趋势图；
-4.code_churn_year.png：年度代码新增 / 删除行数统计图表；
-5.commit_message_wordcloud.png：提交信息关键词词云图。
+
+1. **commit_history.csv**：完整的提交历史原始数据，包含所有提取的核心字段；
+2. **contributor_top10.png**：Top10 贡献者提交次数可视化图表；
+3. **commit_trend_W.png/commit_trend_M.png/commit_trend_ME.png**：按周/月/自定义周期统计的提交趋势图；
+4. **code_churn_year.png**：年度代码新增/删除行数统计图表；
+5. **commit_message_wordcloud.png**：提交信息关键词词云图。
 
 ## 环境准备
 1. 安装Python 3.8+
@@ -23,3 +24,4 @@
    ```bash
 
    pip install -r requirements.txt
+
